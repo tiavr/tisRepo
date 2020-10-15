@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xsd:schema version="1.0"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+           xmlns="http://ujf-grenoble.fr/echec"
+           targetNamespace="http://ujf-grenoble.fr/echec"
+           elementFormDefault="qualified">
+    
+    <xsd:element name="echec" type="Echec"/>
+    <xsd:complexType name="Echec">
+        <xsd:sequence>
+            <xsd:element name="commentaire" type="xsd:string"/>
+            <xsd:element name="piecesBlanches" type="Blanc" maxOccurs="1" minOccurs="1"/>
+            <xsd:element name="piecesNoires" type="Noir" maxOccurs="1" minOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:complexType name="Blanc">
+        <xsd:sequence>
+            <xsd:element name="piece" type="Piece" minOccurs="1" maxOccurs="16"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:complexType name="Noir">
+        <xsd:sequence>
+            <xsd:element name="piece" type="Piece" minOccurs="1" maxOccurs="16"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:complexType name="Piece">
+        <xsd:sequence>
+            <xsd:element name="nom" type="Nom" maxOccurs="1" minOccurs="1"/>
+            <xsd:element name="position" type="Position" maxOccurs="1" minOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:complexType name="Position">
+        <xsd:sequence>
+            <xsd:element name="colonne" type="Colonne" maxOccurs="1" minOccurs="1"/>
+            <xsd:element name="ligne" type="Ligne" maxOccurs="1" minOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:simpleType name="Nom">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="roi"/>
+            <xsd:enumeration value="reine"/>
+            <xsd:enumeration value="tour"/>
+            <xsd:enumeration value="fou"/>
+            <xsd:enumeration value="cavalier"/>
+            <xsd:enumeration value="pion"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="Colonne">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="A"/>
+            <xsd:enumeration value="B"/>
+            <xsd:enumeration value="C"/>
+            <xsd:enumeration value="D"/>
+            <xsd:enumeration value="E"/>
+            <xsd:enumeration value="F"/>
+            <xsd:enumeration value="G"/>
+            <xsd:enumeration value="H"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="Ligne">
+        <xsd:restriction base="xsd:integer">
+            <xsd:minInclusive value="1"/>
+            <xsd:maxInclusive value="8"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+</xsd:schema>

@@ -1,0 +1,46 @@
+Recherches : 
+Le système d'exploitation (noté SE ou OS, abréviation du terme anglais Operating System), est chargé d'assurer la liaison entre les ressources matérielles, l'utilisateur et les applications (traitement de texte, jeu vidéo, ...).
+
+Qu'est-ce qu'un noyau ?
+Le noyau (en anglais kernel) représentant les fonctions fondamentales du système d'exploitation telles que la gestion de la mémoire, des processus, des fichiers, des entrées-sorties principales, et des fonctionnalités de communication.
+L'interpréteur de commande (en anglais shell, traduisez «coquille» par opposition au noyau) permettant la communication avec le système d'exploitation par l'intermédiaire d'un langage de commandes, afin de permettre à l'utilisateur de piloter les périphériques en ignorant tout des caractéristiques du matériel qu'il utilise, de la gestion des adresses physiques, etc.
+Sans le noyau, un système d’exploitation ne peut pas fonctionner. 
+Le noyau est une partie importante du système d’exploitation.
+Le noyau est une interface entre le logiciel et le matériel de l’ordinateur.
+Le noyau est le cœur (ou le niveau le plus bas) du système d’exploitation. Tous les autres composants du système d’exploitation (applications, interface graphique, gestion de fichiers, shell, etc.) dépendent du noyau
+Le noyau est responsable de la communication avec le matériel, et c’est en fait la partie du système d’exploitation qui communique directement avec le matériel
+Gestion du matériel (ram, proc, periph, stockage) via pilotes des périphériques
+communication entre matériels et logiciel
+La majorité des systèmes est construite autour de la noton de noyau. Un facteur unique responsable de la communication entre le matériel et le logiciel.
+gestion des systèmes de fichiers
+plusieurs ordonnanceurs spécialisés (multitache, il gere l'ordre dans lequel les instructions de différentes tâches sont exécutées et est responsable de la sauvegarde et de la restauration des taches.)
+services réseau
+supports réseau,
+certains noyaux fournissent également des modèles de pilotes pour le matériel.
+qui réalise les fonctions fondamentales comme l'exécution des programmes, l'accès aux fichiers, la gestion des utilisateurs et de la mémoire vive, et le transfert de données vers les périphériques (entrées/sorties).
+
+2 types de noyaux : miro-npyaux et monolithiques
+monolithiques : obsolète car difficile à maintenir car augmentation du nombre de pilotes matériels compilés par le noyau
+mais premiers a être développées et mis en oeuvre car excellente vietesse d'éxecution
+http://www-etud.iro.umontreal.ca/~gottif/bdeb/infc32/c1.htm
+https://fr.wikipedia.org/wiki/Noyau_de_syst%C3%A8me_d%27exploitation
+micro-noyaux : approche différente de la notion de noyau suite aux limites des monolithiques
+minimiser les fonctionnalités dépendantes du noyaux en plaçant une grandde partie des services dans l'espace utilisateur
+La stabilité de l'ensemble est améliorée, un erreur de service a peu de conséquence sur la stabilité de l'ensemble du matériel.
+Le service ne peut pas intervenir sur la machine directement.
+
+
+
+L'histoire des OS les plus courantes ?
+
+Windows, famille UNIX (Linux et macOs), Android sur téléphone
+
+Windows : développé par microsoft
+Est à la base une interface graphique pour MS-DOS, un système développé par microsoft (Windows 1.0, 2.0 et 3.0)
+Puis est devenu un système d'exploitation (a 2 familles : Windows NT et 3.x 9x)
+Windows NT 3.1 en 1992 qui trouve bien sa place en entreprise grace à NTFS (système de fichiers)
+Windows XP en 2001, fusion entre differentes branche de Windows, version de windows qui derera le plus longtemps à lépoque (6ans)
+et utilise le noyau NT5.1. Beaucoup de versions sorties
+ecrit en C et C++, premiere version 20 Nov 1985 développé par Microsoft
+Noyau Hybride pour la famille Windows NT et noyau Monolotihique pour les plus anciens
+Quels OS pour quelles applis, pour quelles architectures ?

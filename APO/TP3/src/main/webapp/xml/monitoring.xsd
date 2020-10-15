@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<xsd:schema targetNamespace="http://tis3.polytech-grenoble.fr/TP03/monitoring" 
+            version="1.0"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns="http://tis3.polytech-grenoble.fr/TP03/monitoring"
+            elementFormDefault="qualified">
+    
+    <xsd:element name="monitor" type="Monitor"/>
+    <xsd:complexType name="Monitor">
+        <xsd:sequence>
+            <xsd:element name="patient" type="Patient"/>
+            <xsd:element name="cardio" type="Cardio"/>           
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="Patient">
+        <xsd:sequence>
+            <xsd:element name="firstName" type="xsd:string"/>
+            <xsd:element name="name" type="xsd:string"/>
+            <xsd:element name="age" type="xsd:nonNegativeInteger"/> 
+            <xsd:element name="room" type="xsd:positiveInteger"/>
+            <xsd:element name="illness" type="xsd:string"/>            
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="Cardio">
+        <xsd:sequence>
+            <xsd:element name="start" type="xsd:dateTime"/>
+            <xsd:element name="stop" type="xsd:dateTime"/>
+            <xsd:element name="alert" type="Alert"/>            
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="Alert">
+        <xsd:sequence>
+            <xsd:element name="date" type="xsd:dateTime"/>
+            <xsd:element name="cause" type="xsd:string"/>
+            <xsd:element name="type" type="Type"/>            
+        </xsd:sequence>
+    </xsd:complexType>     
+    <xsd:simpleType name="Type">
+         <xsd:restriction base="xsd:string">
+             <xsd:enumeration value="Benine"/>
+             <xsd:enumeration value="Severe"/>
+         </xsd:restriction>
+     </xsd:simpleType>
+</xsd:schema>

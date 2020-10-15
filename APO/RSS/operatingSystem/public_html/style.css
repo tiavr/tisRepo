@@ -1,0 +1,113 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13 sept. 2020, 18:09:50
+    Author     : tiavr
+*/
+
+.title {
+    color: white;
+}
+body
+{
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'Bookman Old Style', serif;
+    line-height: 1.428571429;
+    color: #333333;
+    background-color: #ffffff;
+}
+.header {
+    background-color: #6c2ae0;
+    color: #f5f5f5;
+    border-radius: 0px;
+}
+.header {
+    padding: 50px 60px;
+}
+.header
+{
+    padding: 30px;
+    margin-bottom: 30px;
+    font-size: 21px;
+    font-weight: 200;
+    line-height: 2.1428571435;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    line-height: 1.1;
+}
+h1, h2, h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+h1 {
+    margin: 0.67em 0;
+    font-size: 2em;
+}
+element.style {
+    width: 400px;
+    height: 400px;
+}
+.pull-right {
+    float: right !important;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.img-circle {
+    border-radius: 20%;
+}
+img {
+    vertical-align: middle;
+}
+img {
+    border: 0;
+}
+div {
+    display: block;
+}
+.button-right {
+    float: right;
+    border: 1px indigo dashed;
+    margin-right: auto;
+    margin-left: auto;
+}
+.button-left {
+    float: left;
+    border: 1px indigo dashed;
+    margin-right: auto;
+    margin-left: auto;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;    
+    line-height: 1.7;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+

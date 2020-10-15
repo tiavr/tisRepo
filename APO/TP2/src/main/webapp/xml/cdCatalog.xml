@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<catalog>
+    <cd>
+        <title>
+            The dock of the bay
+        </title>
+        <artist>
+            Otis Redding
+        </artist>
+        <label>
+            Atlantic
+        </label>
+        <year>
+            1987
+        </year>
+    </cd>
+    <cd>
+        <title>
+            Toto
+        </title>
+        <artist>
+            Tata
+        </artist>
+        <label>
+            Titi
+        </label>
+        <year>
+            2020
+        </year>
+    </cd>
+    <cd>
+        <title>
+            Foo
+        </title>
+        <artist>
+            Bar
+        </artist>
+        <label>
+            Baz
+        </label>
+        <year>
+            2016
+        </year>
+    </cd>
+    <cd>
+        <title>
+            FooBis
+        </title>
+        <artist>
+            Bar
+        </artist>
+        <label>
+            Baz
+        </label>
+        <year>
+            2018
+        </year>
+    </cd>
+    <cd>
+        <title>
+            Stand By Me
+        </title>
+        <artist>
+            Ben E.King
+        </artist>
+        <label>
+            Atco Records
+        </label>
+        <year>
+            1961
+        </year>
+    </cd>
+    <cd>
+        <title>
+            
+        </title>
+        <artist>
+            
+        </artist>
+        <label>
+            
+        </label>
+        <year>
+            
+        </year>
+    </cd>
+    <cd>
+        <title>
+            
+        </title>
+        <artist>
+            
+        </artist>
+        <label>
+            
+        </label>
+        <year>
+            
+        </year>
+    </cd>
+    <cd>
+        <title>
+            
+        </title>
+        <artist>
+            
+        </artist>
+        <label>
+            
+        </label>
+        <year>
+            
+        </year>
+    </cd>
+</catalog>

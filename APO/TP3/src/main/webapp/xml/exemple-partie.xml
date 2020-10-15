@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<echec
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns='http://ujf-grenoble.fr/echec'
+    xsi:schemaLocation='http://ujf-grenoble.fr/echec echec.xsd'>
+    <commentaire>AFG contre Jek, au 31eme coup, partie du 7 février 2003</commentaire>
+    <piecesBlanches>
+        <piece>
+            <nom>roi</nom>
+            <position>
+                <colonne>G</colonne>
+                <ligne>1</ligne>
+            </position>
+        </piece>
+        <piece>
+            <nom>fou</nom>
+            <position>
+                <colonne>D</colonne>
+                <ligne>6</ligne>
+            </position>
+        </piece>
+        <piece>
+            <nom>tour</nom>
+            <position>
+                <colonne>E</colonne>
+                <ligne>1</ligne>
+            </position>
+        </piece>
+        <piece>
+            <nom>pion</nom>
+            <position> 
+                <colonne>C</colonne> 
+                <ligne>2</ligne> 
+            </position>
+        </piece>
+        <piece>
+            <nom>pion</nom>
+            <position>
+                <colonne>B</colonne>
+                <ligne>3</ligne>
+            </position>
+        </piece>
+        <piece>
+            <nom>pion</nom>
+            <position> 
+                <colonne>F</colonne> 
+                <ligne>2</ligne> 
+            </position>
+        </piece>
+        <piece>
+            <nom>pion</nom>
+            <position> 
+                <colonne>G</colonne> 
+                <ligne>2</ligne> 
+            </position>
+        </piece>
+        <piece>
+            <nom>pion</nom>
+            <position> 
+                <colonne>H</colonne> 
+                <ligne>5</ligne> 
+            </position>
+        </piece>
+    </piecesBlanches>
+    <piecesNoires>
+        <piece>
+            <nom>roi</nom>
+            <position>
+                <colonne>B</colonne>
+                <ligne>2</ligne>
+            </position>
+        </piece>
+        <piece>
+            <nom>pion</nom>
+            <position>
+                <colonne>D</colonne>
+                <ligne>4</ligne>
+            </position>
+        </piece>
+        <piece>
+            <nom>reine</nom>
+            <position>
+                <colonne>A</colonne>
+                <ligne>7</ligne>
+            </position>
+        </piece>
+        <piece>
+            <nom>roi</nom>
+            <position>
+                <colonne>B</colonne>
+                <ligne>6</ligne>
+            </position>
+        </piece>
+    </piecesNoires>
+
+</echec>

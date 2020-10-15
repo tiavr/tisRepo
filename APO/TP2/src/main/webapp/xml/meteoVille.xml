@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<xs:meteoVille
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns:xs='http://www.polytech-grenoble.fr/MeteoVille'
+    xsi:schemaLocation='http://www.polytech-grenoble.fr/MeteoVille weather.xsd'>
+    <xs:ville>Grenoble</xs:ville>
+    <xs:date>2020-11-14</xs:date>
+    <xs:temperatureMin>3</xs:temperatureMin>
+    <xs:temperatureMax>38</xs:temperatureMax>
+
+</xs:meteoVille>

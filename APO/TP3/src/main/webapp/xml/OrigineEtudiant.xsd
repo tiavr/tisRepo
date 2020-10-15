@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://polytech-grenoble.fr/TIS/OrigineEtudiant"
+            xmlns:oe="http://polytech-grenoble.fr/TIS/OrigineEtudiant"
+            elementFormDefault="qualified">
+
+     <xsd:element name="etudiant" type="oe:Etudiant"/>
+     
+     <xsd:complexType name="Etudiant">
+         <xsd:sequence>
+             <xsd:element name="nom" type="oe:Nom"/>
+             <xsd:element name="prénom" type="oe:Prénom"/>
+	     <xsd:element name="sexe" type="oe:Sexe"/>
+             <xsd:element name="origine" type="oe:Origine"/>             
+         </xsd:sequence>
+     </xsd:complexType>
+     
+     <xsd:complexType name="Origine">
+        <xsd:sequence>
+            <xsd:element name="filière" type="oe:Filière"/>
+            <xsd:element name="spécialitéFilière" type="oe:ChaineNonVide"/>
+            <xsd:element name="major" type="oe:DomaineScientifique"/>
+            <xsd:element name="géographie" type="oe:Géographie"/>
+        </xsd:sequence>
+     </xsd:complexType>
+     
+     <xsd:simpleType name="Filière">
+         <xsd:restriction base="xsd:string">
+             <xsd:enumeration value="L2"/>
+             <xsd:enumeration value="Peip A"/>
+             <xsd:enumeration value="Peip B"/>
+             <xsd:enumeration value="Peip C"/>
+             <xsd:enumeration value="CPGE"/>
+             <xsd:enumeration value="DUT"/>
+             <xsd:enumeration value="Autres"/>
+         </xsd:restriction>
+     </xsd:simpleType>
+
+     <xsd:simpleType name="DomaineScientifique">
+         <xsd:restriction base="xsd:string">
+             <xsd:enumeration value="Mathématiques"/>
+             <xsd:enumeration value="Informatique"/>
+             <xsd:enumeration value="Mathématiques et Informatique"/>
+             <xsd:enumeration value="Physique"/>
+             <xsd:enumeration value="Chimie"/>
+             <xsd:enumeration value="Physique et Chimie"/>
+             <xsd:enumeration value="Électronique"/>
+             <xsd:enumeration value="Génie Electrique"/>
+             <xsd:enumeration value="Statistique"/>
+             <xsd:enumeration value="Biologie"/>
+             <xsd:enumeration value="Biochimie"/>
+             <xsd:enumeration value="Autre ingénierie"/>
+             <xsd:enumeration value="Autre Science Dure"/>
+             <xsd:enumeration value="Autre Science Vivante"/>
+         </xsd:restriction>
+     </xsd:simpleType>
+     
+     <xsd:complexType name="Géographie">
+         <xsd:sequence>
+             <xsd:element name="région" type="oe:Région"/>
+             <xsd:element name="ville" type="oe:ChaineNonVide"/>
+         </xsd:sequence>
+     </xsd:complexType>
+     
+     <xsd:simpleType name="Région">
+         <xsd:restriction base="xsd:string">
+             <xsd:enumeration value="Rhône-Alpes Auvergne"/>
+             <xsd:enumeration value="France"/>
+             <xsd:enumeration value="Etranger"/>
+         </xsd:restriction>
+     </xsd:simpleType>
+
+     <xsd:simpleType name="Sexe">
+         <xsd:restriction base="xsd:string">
+             <xsd:enumeration value="M"/>
+             <xsd:enumeration value="F"/>
+         </xsd:restriction>
+     </xsd:simpleType>
+
+     <xsd:simpleType name="Nom">
+         <xsd:restriction base="xsd:string">
+             <xsd:pattern value="[A-Z]+(( |-)[A-Z]+)*"/>
+         </xsd:restriction>
+     </xsd:simpleType>
+
+     <xsd:simpleType name="Prénom">
+         <xsd:restriction base="xsd:string">
+             <xsd:pattern value="[A-Z][a-zéïàèûç]+(( |-)[A-Z][a-zéïàèûç]+)*"/>
+         </xsd:restriction>
+     </xsd:simpleType>
+
+     <xsd:simpleType name="ChaineNonVide">
+         <xsd:restriction base="xsd:string">
+             <xsd:minLength value="2"/>
+         </xsd:restriction>
+     </xsd:simpleType>
+</xsd:schema>

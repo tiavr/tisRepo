@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<monitor
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns='http://tis3.polytech-grenoble.fr/TP03/monitoring'
+    xsi:schemaLocation='http://tis3.polytech-grenoble.fr/TP03/monitoring monitoring.xsd'>
+    <patient>
+        <firstName>Toto</firstName>
+        <name>Tata</name>
+        <age>20</age>
+        <room>100</room>
+        <illness>Cancer</illness>
+    </patient>
+    <cardio>
+        <start>2020-09-30T18:22:12</start>
+        <stop>2020-09-30T19:12:05</stop>
+        <alert>
+            <date>2020-09-30T18:02:03</date>
+            <cause>Test</cause>
+            <type>Severe</type>
+        </alert>
+    </cardio>
+
+</monitor>
