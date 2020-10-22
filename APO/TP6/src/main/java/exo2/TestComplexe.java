@@ -17,8 +17,10 @@ public class TestComplexe {
     public static void main(String[] args) {
         // TODO code application logic here
         Complexe c = new Complexe();
-        c.setReal(-4.7);
-        c.setImag(3);
+        c.setReal(-6.7);
+        c.setImag(5);
+        c.setArg(6);
+        c.setMod(8);
         System.out.println(c.texte());
     }
     
