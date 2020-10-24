@@ -21,6 +21,8 @@ public class Test {
         dessin.triangleGauche();
         System.out.println("");
         dessin.triangleDroit();
+        System.out.println("");
+        dessin.triangleIso();
     }
     
 }

@@ -65,5 +65,20 @@ public class DessinateurFigures {
         this.hauteur = hauteur;
     }
     
-    
+    public void triangleIso () {
+        int tailleLigne = 2 * hauteur - 1;
+        for(int i = 0; i < hauteur; i++) {
+            for(int j = 0; j <= tailleLigne; j++) {
+                if(j == hauteur - i || j == hauteur + i) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println("\n");
+        }
+    }
 }
+    
+    
+

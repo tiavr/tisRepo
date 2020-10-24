@@ -15,7 +15,7 @@ public class TestABC {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        TroisNombres n1 = new TroisNombres(1, 2, 0);
+        TroisNombres n1 = new TroisNombres(5, 3, 1);
         n1.affiche();
         n1.diviseAparB();
         n1.lePlusGrandEntreAetB();

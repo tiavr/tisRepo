@@ -15,7 +15,7 @@ public class Test {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Trinome eq1 = new Trinome(1, 1 ,1);
+        TrinomeComplexe eq1 = new TrinomeComplexe(1, 1 ,1);
         int nbRac;
         nbRac = eq1.nbRacines();
         

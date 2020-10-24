@@ -61,18 +61,37 @@ public class TroisNombres {
         }
     }
     public void reordonneParOrdreCroissantABetC(){
-        if(b > c){
-          int d = b;
-          b = c;
-          c = d;
-      }
-    
-        if(a > b){
-            int d = a;
-            a = b;
-            b = d;
-
-      }
+        if(a <= b && a <= c){
+          if (b>c){
+              int tmp = b;
+              b =c;
+              c = tmp;
+          }
+          
+       }
+        else{
+            if(b<=a && b<=c){
+                int tmp = a;
+                a=b;
+                b=tmp;
+            }
+            if (b>c){
+              int tmp = b;
+              b =c;
+              c = tmp;
+            }
+        else{
+            int tmp = a;
+            a = c;
+            c = tmp;
+            
+            if (b>c){
+              int tmp2 = b;
+              b =c;
+              c = tmp2;
+            }
+        }
+        }
     }
     
     public void lePlusGrandEntreABetC(){
