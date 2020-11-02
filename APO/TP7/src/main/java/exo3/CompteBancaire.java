@@ -33,7 +33,7 @@ public class CompteBancaire {
         this.numero = numero;
         this.client = nom;
         this.solde = somme;
-        dA = somme / 2;
+        dA = somme / 2 * (-1);
     }
     
     public void depot(double somme){

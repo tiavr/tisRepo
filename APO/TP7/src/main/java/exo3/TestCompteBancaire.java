@@ -56,6 +56,15 @@ public class TestCompteBancaire {
   System.out.print(ken.infos());
   alain.depot(somme);
   System.out.print(alain.infos());
+  
+  
+  
+  
+  
+  
+  CompteBancaire babz = new CompteBancaire(1, "Babz", 1000000);
+  babz.depot(2000000);
+  System.out.println(babz.infos());
 }
     
 }
