@@ -340,13 +340,31 @@ SELECT nomI
 FROM LesRepas
 					
 4) 
+ou requete type : miroir
+SELECT dateR, nomP, nomV
+FROM LeMenu natural join LesRepas R1 join LesRepas R2 on (R1.date = R2.date)
+WHERE R1.nomI = 'Thomas' and R2.nomI = 'Jacques'
+
 SELECT dateR, nomP, nomV
 FROM LeMenu NATURAL JOIN LesRepas
-WHERE nomI = 'Jacques' and nomI = 'Thomas'
+WHERE nomI='Jacques'
+INTERSECT
+SELECT dateR, nomP, nomV
+FROM LeMenu NATURAL JOIN LesRepas
+WHERE nomI = 'Thomas'
 
 5)
-SELECT DISTINCT nomA
-FROM LesPreferences NATURAL JOIN LeMenu
+
+Select DISTINCT nomI
+From LesRepas natural join LesMenus
+Where (nomI,nomP) in (Select nomA, nomP 
+    From LesPréférences)
+
+Select distinct nomI
+From LesRepas natural join LesMenus  join LesPréférences on
+( nomI=nomA and LesMenus.nomP=LesPréférences.nomP );
+
+
 
 6)
 SELECT nomI
@@ -355,15 +373,167 @@ GROUP BY nomI
 HAVING count(*) >= 2;
 
 7)
-SELECT nomI
-FROM LesRepas JOIN (LesPreferences Natural Join LesPlats) on(nomI = nomA)
-WHERE typeP = 'dessert'
+select nomI
+From Les preferences  natural join LesPlats
+Where typeP = ‘dessert’
+Minus
+(select nomI
+From Les preferences  natural join LesPlats
+Where typeP != ‘dessert’)
+
 
 8)
-SELECT DISTINCT nomA
-FROM LesPreferences JOIN LesRepas on (nomA = nomI)
-WHERE (nomP,nomA) NOT IN 
-				(SELECT nomP, nomI
-				FROM LeMenu NATURAL JOIN LesRepas)
+Select distinct nomA
+From LesPreférences
+Where nomA not in (select nomA  
+                   From  LesRepas Natural Join LeMenu  join  LesPreferences on (nomI= nomA and LeMenu.nomP= LesPreférence.nomP))
 					
 
+9)
+SELECT nomI
+FROM LesRepas NATURAL JOIN LeMenu
+WHERE nomI NOT IN (SELECT nomI
+					FROM LesPreferences JOIN LesRepas on (nomA = nomI)
+					WHERE nomP = 'fois gras')
+
+SELECT nomI
+FROM LesRepas NATURAL JOIN LeMenu
+WHERE nomP = 'foie gras'
+MINUS
+SELECT nomI
+FROM LesPreferences JOIN LesRepas on (nomA = nomI)
+WHERE nomP = 'fois gras'
+
+10) 
+SELECT DISTINCT nomI, nomP, nomV
+FROM LesRepas NATURAL JOIN LeMenu
+WHERE dateR = (SELECT max(dateR)
+			   FROM LesRepas NATURAL JOIN LeMenu);
+
+SELECT DISTINCT nomI, nomP, nomV
+FROM LesRepas NATURAL JOIN LeMenu 
+NATURAL JOIN (SELECT max(dateR) dateR
+			   FROM LesRepas NATURAL JOIN LeMenu)
+
+11)
+DIVISION INTERNE
+
+Select nomI
+From LesRepas
+Group by nomI
+Having count(distinct dateR) = (select count (distinct dateR)
+     							from LesRepas)
+
+Select nomI
+From (select nomI, count(distinct dateR) TR
+           from LesRepas
+           group by nomI)
+Natural join (select count(distinct dateR) TR
+     			from LesRepas)
+
+12)
+
+MAXIMUM ABSOLU 
+
+select NomA, NomP
+from Lesplats
+where nomA in
+			(select nomI 
+			from lesRepas 
+			group by nomI
+			having count(dateR)=(select max(count(dateR)) from LesRepas group by nomI))
+
+select NomA, NomP
+from Lesplats join
+				(select nomI 
+				from lesRepas 
+				group by nomI
+				having count(dateR)=(select max(count(dateR)) from LesRepas group by nomI))
+on (nomA=nomI)
+
+13)
+MAXIMUM RELATIF
+
+RELATION : 
+select dateR, nomI, count(*)nbPMP
+from LesRepas natural join LeMenu join LesPréférences on (nomI=nomA and LeMenu.nomP=LesPréférences.nomP)
+group by dateR, nomI
+
+requete : 
+select dateR, nomI
+from  (select dateR, nomI, count(*)nbPMP
+		from LesRepas natural join LeMenu join LesPréférences on (nomI=nomA and  LeMenu.nomP=LesPréférences.nomP)
+		group by dateR, nomI)
+where (dateR,nbPMP) in  (select dateR, max(nbPMP)
+   						from  (select dateR, nomI, count(*) nbPMP
+								from LesRepas natural join LeMenu join LesPréférences on (nomI=nomA and LeMenu.nomP=LesPréférences.nomP)
+								group by dateR, nomI)
+   						group by dateR)
+
+
+14)
+Select dateR, count(distinct nomI)
+from LesRepas natural join LeMenu join LesPréférences on (nomI = nomA and LeMenu.nomP = LesPréférences.nomP)
+group by dateR;
+
+15)
+DIVISION EXTERNE
+Select nomA, count(distinct typeP)
+From LesPreferences natural join LesPlats
+Group By nomA
+Having count(distinct typeP)= (Select count(distinct typeP) from LesPlats)
+
+16)
+select count (nomI), month(dateR)
+from LesRepas  
+group by month(dateR) ; 
+
+17)
+MAX RELATIF
+RELATION : 
+(SELECT nomp, nomv, COUNT(dater) nbfois
+FROM lemenu
+GROUP BY nomp, nomv)
+
+SELECT nomp, nomv, nbfois
+FROM (SELECT nomp, nomv, COUNT(dater) nbfois
+              FROM lemenu
+              GROUP BY nomp, nomv)
+WHERE (nomp, nbfois) IN (SELECT nomp, MAX(nbfois)
+					     FROM (SELECT nomp, nomv, COUNT(dater) nbfois
+					     		FROM lemenu
+					     		GROUP BY nomp, nomv)
+      					GROUP BY nomp)
+
+18)
+
+Select nomA, count(dateR), count(nomP), count(distinct typeP)
+from LesRepas natural join LesPlats right outer join LesPreferences 
+on (nomI = nomA and LesPreferences.nomP = LesPlats.nomP)
+group by nomI;
+
+TD ETUDIANTS
+
+1)
+SELECT S.nom, S.Prenom, E.Nom, E.Prenom
+FROM Etudiants S NATURAL JOIN Inscription NATURAL JOIN MatEns NATURAL JOIN Enseignants E;
+
+2)
+REQUETE TYPE : Division EXTERNE
+Attributs : NMatiere, NEtudiant
+SELECT NEtudiant
+FROM Notes
+GROUP BY NEtudiant
+HAVING COUNT(distinct NMatiere) = (select count(distinct NMatiere) FROM Notes);
+
+3)
+REQUETE TYPE : Division EXTERNE
+Attributs : Nmatiere, NEtudiant
+SELECT NMatiere
+FROM Notes
+GROUP BY NMatiere
+HAVING COUNT(distinct NEtudiant) = (SELECT COUNT(distinct NEtudiant) FROM NOTES);
+
+4)
+SELECT NMatiere, Intitule, Coefficient, NEtudiant, Note
+FROM Matiere NATURAL JOIN Notes;
