@@ -515,25 +515,39 @@ group by nomI;
 TD ETUDIANTS
 
 1)
-SELECT S.nom, S.Prenom, E.Nom, E.Prenom
-FROM Etudiants S NATURAL JOIN Inscription NATURAL JOIN MatEns NATURAL JOIN Enseignants E;
+SELECT DISTINCT S.nom, S.Prenom, E.Nom, E.Prenom
+FROM Etudiants S NATURAL JOIN Inscription NATURAL JOIN MatEns JOIN Enseignants E on (MatEns.NEnseignant = E.NEnseignant);
 
 2)
 REQUETE TYPE : Division EXTERNE
 Attributs : NMatiere, NEtudiant
 SELECT NEtudiant
-FROM Notes
+FROM Notes NATURAL JOIN Matiere
 GROUP BY NEtudiant
 HAVING COUNT(distinct NMatiere) = (select count(distinct NMatiere) FROM Notes);
+
+SELECT NEtudiant
+FROM (SELECT NEtudiant, count(distinct NMatiere) TOTNM
+	FROM Notes NATURAL JOIN Matiere
+	GROUP BY NEtudiant)
+NATURAL JOIN (SELECT COUNT(Nmatiere) TOTNM
+			FROM Matiere);
 
 3)
 REQUETE TYPE : Division EXTERNE
 Attributs : Nmatiere, NEtudiant
 SELECT NMatiere
-FROM Notes
+FROM Notes NATURAL JOIN Matiere
 GROUP BY NMatiere
 HAVING COUNT(distinct NEtudiant) = (SELECT COUNT(distinct NEtudiant) FROM NOTES);
 
+SELECT NMatiere
+FROM (SELECT NMatiere, count(distinct NEtudiant) TOTNE
+	FROM Notes NATURAL JOIN Matiere
+	GROUP BY NMatiere)
+NATURAL JOIN (SELECT COUNT(NEtudiant) TOTNE
+			FROM Etudiants);
+
 4)
 SELECT NMatiere, Intitule, Coefficient, NEtudiant, Note
-FROM Matiere NATURAL JOIN Notes;
+FROM Matiere LEFT JOIN Notes on(Matiere.NMatiere = Notes.Nmatiere);

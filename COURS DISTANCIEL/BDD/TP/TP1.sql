@@ -177,30 +177,23 @@ GROUP BY DEPTNO
 ORDER BY MOYREVENU desc;
 
 6) 
-SELECT DEPTNO DEPARTEMENT
-FROM DEPT NATURAL JOIN EMP
 
 select deptno DEPARTEMENT
 from emp
-Where job IN (‘CLERK’, ’ANALYST’, ‘MANAGER’)
+Where job IN ('CLERK', 'ANALYST', 'MANAGER')
 group by deptno
 Having count (distinct job) = 3;
 
 8)
-Select sub.ename EMPLOYE, nvl(chef.ename, 'BIG BOSS') CHEF
-From emp sub left outer join emp chef on(chef.empno = sub.mgr)
-Order By EMPLOYE;
+SELECT s.ename EMPLOYE, nvl(c.ename, 'BIG BOSS') CHEF
+FROM emp s LEFT OUTER JOIN emp c on(c.empno = s.mgr)
+ORDER BY EMPLOYE;
 
 
 10)
-SELECT count(mgr) NBSUBORDONNE
-FROM EMP emp1 LEFT OUTER JOIN EMP emp2
-GROUP BY mgr
-ORDER BY NBSUBORDONNE desc;
-
-SELECT count(mgr) NBSUBORDONNE
-FROM EMP
-GROUP BY mgr
+SELECT c.empno EMPLOYE, count(s.empno) NBSUBORDONNE
+FROM EMP c left outer join emp s on(s.mgr = c.empno)
+GROUP BY c.empno
 ORDER BY NBSUBORDONNE desc;
 
 11)
@@ -218,9 +211,10 @@ ORDER BY REVENU desc;
 
 14)
 
-SELECT JOB, DEPTNO
+SELECT JOB 
 FROM EMP
-WHERE DEPTNO IN ()
+GROUP BY JOB
+HAVING COUNT(distinct deptno)=(select count(distinct deptno) FROM EMP)
 
 16)
 SELECT DEPTNO, sum(sal + NVL(comm, 0)) SUMREVENUMAX
@@ -242,8 +236,100 @@ NATURAL JOIN
 	  GROUP BY DEPTNO));
 
 18)
-SELECT ENAME NOM, (TO_DATE('27-NOV-20') - hiredate) ANCIENNETE
+SELECT ename NOM, (sysdate-hiredate)/365 ANCIENNETE
 FROM EMP
-WHERE (TO_DATE('27-NOV-20') - hiredate) >= 7305;
+WHERE (sysdate-hiredate)/365 >= 20
+ORDER BY ANCIENNETE;
 
-SELECT hiredate FROM EMP;
+TP4 :
+
+drop table e1;
+drop table e2;
+drop table mag;
+drop table ventes;
+drop table prod2;
+drop table prod1;
+
+CREATE TABLE PROD1
+(NP1 NUMBER(2) PRIMARY KEY,
+DESCR1 CHAR(20),
+PRIX1 number(4) NOT NULL check (PRIX1 > 0));
+
+CREATE TABLE PROD2
+(NP2 NUMBER(2) PRIMARY KEY,
+DESCR2 CHAR(20),
+PRIX2 number(4) NOT NULL check (PRIX2 > 0));
+
+CREATE TABLE E1
+(NE NUMBER(3) PRIMARY KEY,
+NOM CHAR(20),
+ADR CHAR(20),
+RAYON integer);
+
+CREATE TABLE E2
+(NE NUMBER(3) references e1(ne),
+DEB DATE,
+FIN DATE,
+SALAIRE NUMBER(7) NOT NULL CHECK(SALAIRE > 0),
+PRIMARY KEY(NE,DEB),
+CHECK (DEB < FIN));
+
+CREATE TABLE MAG
+(RAYON integer PRIMARY KEY,
+ETAGE NUMBER(2) NOT NULL,
+DIR number(3) references e1(ne));
+
+CREATE TABLE VENTES
+(NP number(2),
+RAYON integer references mag(rayon),
+PRIMARY KEY(NP,RAYON));
+
+C1 : 
+(select np1 from prod1)
+intersect
+(select np2 from prod2);
+
+C2 :
+select NE
+from e1
+where NE not in (select NE from e2)
+UNION
+select NE
+from e2
+where NE not in (select NE from e1);
+
+C3 : 
+select dir
+from mag 
+where dir not in (select ne from e1);
+
+C4 :
+select rayon 
+from ventes
+where rayon not in (select rayon from mag)
+select rayon 
+from mag
+where rayon not in (select rayon from ventes);
+
+C5 : 
+SELECT *
+FROM (select np1 NP from prod1 UNION select np2 from prod2)
+where NP not in(select np from ventes);
+
+2ème partie : 
+
+1)
+SELECT NP, descr, prix
+FROM (SELECT np1 NP, descr1 descr, prix1 prix
+FROM PROD1
+UNION
+select np2 np, descr2 descr, prix2 prix
+FROM PROD2) natural join ventes natural join mag
+WHERE RAYON = 3;
+
+
+
+2)
+
+
+
