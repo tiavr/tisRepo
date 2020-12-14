@@ -330,6 +330,81 @@ WHERE RAYON = 3;
 
 
 2)
+drop table RES_OR;
+drop table RES_AR;
+drop table res_br;
+drop table TYPE_DIS;
+drop table SPOR_DIS;
+drop table DISCIPLINE;
+drop table SPORTIF;
+drop table PARTICIPANT;
+
+
+TP5 : 
+
+CREATE TABLE PARTICIPANT(
+PAYS char(20) PRIMARY KEY,
+NBSP Integer,
+NBMED integer,
+NBMEDOR integer CHECK(NBMEDOR >= 0),
+NBMEDAR integer CHECK(NBMEDAR >= 0),
+NBMEDBR integer CHECK(NBMEDBR >= 0), 
+CONSTRAINT NBMED check (NBMED = NBMEDOR + NBMEDAR + NBMEDBR)
+);
+
+CREATE TABLE SPORTIF(
+NS integer PRIMARY KEY,
+NOM char(20),
+PRE char(20),
+AGE integer CHECK (age between 12 AND 60),
+SEXE char(10) CHECK (SEXE IN ('masculin', 'feminin')),
+PAYS char(20) references PARTICIPANT(PAYS));
+
+CREATE TABLE DISCIPLINE(
+ND integer PRIMARY KEY,
+NOMD char(20),
+GROUPE char(20));
+
+CREATE TABLE TYPE_DIS(
+ND integer references DISCIPLINE(ND),
+TYPE char(20),
+PRIMARY KEY(ND,TYPE));
+
+CREATE TABLE SPOR_DIS(
+NS integer references SPORTIF(ns),
+ND integer references DISCIPLINE(ND),
+PRIMARY KEY(NS,ND));
+
+CREATE TABLE RES_OR(
+ND integer,
+TYPE char(20),
+MDOR integer,
+FOREIGN KEY(ND,TYPE) references TYPE_DIS(ND, TYPE),
+FOREIGN KEY(ND, MDOR) references SPOR_DIS(ND, NS),
+PRIMARY KEY(ND,TYPE));
+
+CREATE TABLE RES_AR(
+ND integer,
+TYPE char(20),
+MDAR integer,
+FOREIGN KEY(ND,TYPE) references TYPE_DIS(ND, TYPE),
+FOREIGN KEY(ND, MDAR) references SPOR_DIS(ND, NS),
+PRIMARY KEY(ND,TYPE));
+
+CREATE TABLE RES_BR(
+ND integer,
+TYPE char(20),
+MDBR integer,
+FOREIGN KEY(ND,TYPE) references TYPE_DIS(ND, TYPE),
+FOREIGN KEY(ND, MDBR) references SPOR_DIS(ND, NS),
+PRIMARY KEY(ND,TYPE));
 
 
 
+
+3)
+
+SELECT NS,ND
+FROM SPORTIF NATURAL JOIN SPOR_DIS NATURAL JOIN RES_OR
+WHERE TYPE = 'masculin'
+GROUP BY NS, ND;

@@ -1,0 +1,13 @@
+ANNALES 2016 : 
+
+1)
+
+Medecin : idMed
+Patient : idSS
+Consultation : idConsultation
+Parcours_Sante : idConsultation, idMed_a_consulter, id_nouvelle_consultation
+Ordonnance : idConsultation, idMedicament
+
+2°
+
+CRE

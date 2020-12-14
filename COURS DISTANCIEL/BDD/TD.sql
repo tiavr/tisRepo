@@ -518,6 +518,9 @@ TD ETUDIANTS
 SELECT DISTINCT S.nom, S.Prenom, E.Nom, E.Prenom
 FROM Etudiants S NATURAL JOIN Inscription NATURAL JOIN MatEns JOIN Enseignants E on (MatEns.NEnseignant = E.NEnseignant);
 
+SELECT DISTINCT S.nom, S.Prenom, E.Nom, E.Prenom
+FROM Etudiants S NATURAL JOIN Inscription NATURAL JOIN MatEns NATURAL JOIN Enseignants;
+
 2)
 REQUETE TYPE : Division EXTERNE
 Attributs : NMatiere, NEtudiant
@@ -550,4 +553,100 @@ NATURAL JOIN (SELECT COUNT(NEtudiant) TOTNE
 
 4)
 SELECT NMatiere, Intitule, Coefficient, NEtudiant, Note
-FROM Matiere LEFT JOIN Notes on(Matiere.NMatiere = Notes.Nmatiere);
+FROM Matiere NATURAL LEFT JOIN Notes on(Matiere.NMatiere = Notes.Nmatiere);
+
+Requête 5 :
+Letourneau
+on identifie
+SELECT NEtudiant, AVG(Note)
+FROM Etudiants NATURAL JOIN Notes NATURAL JOIN Matiere
+WHERE upper(Intitulé)=’BD’ 
+GROUP BY NEtudiant;
+
+2) on décore
+SELECT MOY, NOM, Prenom
+FROM Etudiants 
+Natural Join  (SELECT NEtudiant, AVG(Note) MOY
+FROM Etudiants NATURAL JOIN Notes NATURAL JOIN Matiere
+WHERE upper(Intitulé)=’BD’ 
+GROUP BY NEtudiant);
+
+autre solution (à manipuler avec précaution)
+SELECT Nom, Prenom , AVG(Note)
+FROM Etudiants NATURAL JOIN Notes NATURAL JOIN Matiere
+WHERE upper(Intitulé)=’BD’ 
+GROUP BY NEtudiant, Nom, Prenom;
+
+
+===============
+Requête 6 :
+Long Wah
+Select Nom, Prenom, Intitule, Note
+from Etudiants natural left outer join Notes natural left outer join Matiere
+
+Select Nom, Prenom, Intitule, Note
+from Matière  natural join Notes  natural right outer join Etudiants
+===============
+
+Requête 7 :
+Ouassou
+moyenne de chaque étudiant en BD :
+( select avg (note) moyenne, Netudiant)
+        from notes
+        where intitulé ='BD'
+        group by intitule , Netudiant)
+moyenne en BD de tous les étudiants :
+select avg( note) 
+from notes
+where  intitulé = ‘BD’;
+
+liste des étudiants qui en BD ont + que la moyenne en BD :
+select Netudiant 
+        from notes
+        where intitulé ='BD'
+        group by  Netudiant
+        Having AVG(note) > ( select avg( note) 
+                                          from notes
+                                          where  intitulé = ‘BD’)
+
+Select nom , age , sexe
+from etudiant natural join (select Netudiant 
+         from notes
+        where intitulé ='BD'
+        group by  Netudiant
+        Having AVG(note) > ( select avg( note) 
+                                          from notes
+                                          where  intitulé = ‘BD’))
+
+===============
+
+Requête 8 :
+Richard
+calculer la moyenne de chaque étudiant dans chaque matière
+(select NEtudiant, NMatiere, AVG(Note) Moy
+from Notes natural join Matiere
+group by NEtudiant, NMatiere)
+
+
+select NEtudiant, sum(Moy*Coefficient)/sum(Coefficient)
+from (select NEtudiant, NMatiere, AVG(Note) Moy
+from Notes natural join Matiere
+group by NEtudiant, NMatiere)
+natural join Matiere
+group by NEtudiant
+
+
+===============
+
+Requête 9 :
+Samson
+Absence de requête 
+MINUS
+ 
+Select NEtudiant, nom, intitulé
+From (select NEtudiant, NMatiere 
+          From Etudiant natural join Matiere
+          MINUS 
+          Select NEtudiant, NMatiere
+          From Notes)
+natural join Etudiants natural join Matière
