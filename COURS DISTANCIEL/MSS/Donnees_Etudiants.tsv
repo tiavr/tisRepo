@@ -13,7 +13,7 @@ ID	Etudes	Derniere_Annee_Etude	Sexe	Annee_Naissance	Taille_en_cm	Pointure	Longue
 12	TIS	2016	F	1993	175	41	30	Marron	Chatain	7.5	10.2	7.10	NA	Egyptien	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
 13	TIS	2016	H	1993	175	43	7	Marron	Chatain	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
 14	TIS	2016	F	1994	163	37	60	Marron	Chatain	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-15	TIS	2016		1994	186	41	2.7	Vert	Noir	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+15	TIS	2016	NA	1994	186	41	2.7	Vert	Noir	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
 16	TIS	2016	H	1992	176	42	9	Marron	Chatain	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
 17	TIS	2016	F	1992	158	36	30	Vert	Chatain	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
 18	TIS	2016	H	1993	172	42.5	3.1	Marron	Chatain	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
@@ -223,19 +223,19 @@ ID	Etudes	Derniere_Annee_Etude	Sexe	Annee_Naissance	Taille_en_cm	Pointure	Longue
 229	PRI	2019	F	1978	167	39	47	Marron	Chatain	10.3	12	10.60	4	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
 230	PRI	2019	F	1996	170	40	NA	Bleu	Chatain	9.5	10.5	10.30	6	Grec	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
 231	PRI	2019	H	1996	188	45	5	Marron	Noir	10	11.2	10.30	6	Egyptien	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-232	TIS	2020	F	1997	167	37	6	Bleu	Blond	7	8	7.50	6.3	Grec	0	Chat	2	5.50	Moyenne	10	Android	2	0	PC	D	NA
-233	TIS	2020	F	1997	168	39	45	Vert	Noir	8	9	8.50	5.5	Egyptien	0	Chien	0	15.00	Moyenne	6	Android	2	10	PC	D	NA
+232	TIS	2020	F	1997	167	37	6	Bleu	Blond	7	8	7.50	6.3	Grec	0	Chat	2	5.5	Moyenne	10	Android	2	0	PC	D	NA
+233	TIS	2020	F	1997	168	39	45	Vert	Noir	8	9	8.50	5.5	Egyptien	0	Chien	0	15	Moyenne	6	Android	2	10	PC	D	NA
 234	TIS	2020	H	1995	178	42	6	Marron	Chatain	10	10.5	8.00	6.5	Egyptien	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
 235	TIS	2020	F	1996	167	41	30	Marron	Chatain	8	10	9.00	5.5	Egyptien	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-236	TIS	2020	H	1997	183	45	10	Vert	Chatain	10.5	11.5	9.30	6	Grec	0	Chat	4	13.00	Moyenne	16	Android	2	5	PC	D	NA
+236	TIS	2020	H	1997	183	45	10	Vert	Chatain	10.5	11.5	9.30	6	Grec	0	Chat	4	13	Moyenne	16	Android	2	5	PC	D	NA
 237	TIS	2020	H	1998	180	41	4	Marron	Noir	7.5	9	8.00	5	Grec	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-238	TIS	2020	H	1996	189	46	5	Bleu	Blond	10.1	11.8	10.90	6.8	Grec	15	Chat	1	5.00	Moyenne	10	IOS	3	1	PC	D	NA
-239	TIS	2020	H	1996	186	43	8	Noir	Noir	9.8	10.9	10.50	6.5	Egyptien	20	Aucun	0	6.50	Forte	20	Android	2	5	PC	D	NA
+238	TIS	2020	H	1996	189	46	5	Bleu	Blond	10.1	11.8	10.90	6.8	Grec	15	Chat	1	5	Moyenne	10	IOS	3	1	PC	D	NA
+239	TIS	2020	H	1996	186	43	8	Noir	Noir	9.8	10.9	10.50	6.5	Egyptien	20	Aucun	0	6.5	Forte	20	Android	2	5	PC	D	NA
 240	TIS	2020	F	1995	158	38	32	Marron	Noir	8.3	9.3	8.60	6	Egyptien	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
 241	TIS	2020	F	1996	164	38	30	Marron	Noir	8	8.5	7.50	6.3	Egyptien	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
 242	TIS	2020	F	1996	160	37	45	Bleu	Chatain	7	8	7.50	6	Egyptien	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
 306	TIS	2020	F	1997	163	39	20	Noir	Noir	7.9	9	8.30	5.5	Egyptien	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-308	TIS	2020	F	1996	172	38	35	Marron	Chatain	9.3	10	9.50	6	Egyptien	0	Chat	2	8.00	Faible	15	IOS	2	1	PC	D	NA
+308	TIS	2020	F	1996	172	38	35	Marron	Chatain	9.3	10	9.50	6	Egyptien	0	Chat	2	8	Faible	15	IOS	2	1	PC	D	NA
 309	TIS	2020	H	1997	181	43	2	Marron	Chatain	7.5	8.5	8.00	6	Grec	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
 310	TIS	2020	F	1995	162	37	35	Vert	Chatain	8.5	9.2	9.00	5.8	Egyptien	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
 311	TIS	2020	F	1997	173	40	45	Marron	Chatain	7	8	7.50	6	Egyptien	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
@@ -246,131 +246,131 @@ ID	Etudes	Derniere_Annee_Etude	Sexe	Annee_Naissance	Taille_en_cm	Pointure	Longue
 316	TIS	2020	F	1995	160	37	15	Marron	Noir	7.5	8.5	7.50	5	Egyptien	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
 317	TIS	2020	F	1997	161	37	60	Marron	Chatain	8	8.5	8.00	6	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
 318	TIS	2020	F	1997	157	39	48	Bleu	Chatain	8.2	9.3	8.90	6.2	Egyptien	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-319	TIS	2020	F	1997	169	41	44	Bleu	Chatain	8.5	9.2	6.50	6.4	Grec	5	Chien	0	6.00	Faible	5	IOS	2	1	C	NA	NA
-320	TIS	2020	F	1998	160	39	32	Marron	Chatain	8.5	9.5	8.90	6	Egyptien	0	Chien	0	12.00	Faible	8	Android	2	1	PC	D	NA
+319	TIS	2020	F	1997	169	41	44	Bleu	Chatain	8.5	9.2	6.50	6.4	Grec	5	Chien	0	6	Faible	5	IOS	2	1	C	NA	NA
+320	TIS	2020	F	1998	160	39	32	Marron	Chatain	8.5	9.5	8.90	6	Egyptien	0	Chien	0	12	Faible	8	Android	2	1	PC	D	NA
 321	TIS	2020	H	1997	182	43	4	Bleu	Chatain	8.5	9.4	8.40	6.5	Egyptien	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
 322	TIS	2020	F	1996	168	38	38	Marron	Chatain	9	10	9.50	6	Egyptien	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
 323	TIS	2020	F	1996	155	36	40	Noir	Noir	6.5	7	6.60	5.8	Egyptien	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
 324	CM1	NA	F	2008	147	36	53	Vert	Blond	8	9.1	7.10	5.8	Egyptien	NA	Chat	3	NA	Faible	NA	NA	NA	NA	PC	D	NA
 326	TIS	2021	F	1997	162	38	39	Marron	Noir	10	11	9.00	6	Egyptien	4	Autre	4	9.25	Faible	4	Android	5	1	PC	D	NA
-325	TIS	2020	F	1998	167	38	25	Bleu	Chatain	6.5	9.1	8.00	6.1	Egyptien	0	NA	3	16.00	NA	NA	Android	4	NA	PC	NA	NA
-327	TIS	2021	F	1996	160	39	40	Marron	Chatain	7	7.5	6.50	6	Egyptien	28	Chien	0	4.50	Moyenne	31	Android	3	1	C	G	NA
-328	TIS	2020	H	1995	170	42	10	Bleu	Blond	10	12	10.00	6	Egyptien	20	Aucun	0	7.00	Moyenne	10	Android	3	5	PC	D	NA
-329	TIS	2022	F	1998	160	39	25	Vert	Chatain	7.7	9.5	9.00	5.8	Grec	4	Chien	0	14.50	Faible	6	Android	2	1	PC	D	NA
+325	TIS	2020	F	1998	167	38	25	Bleu	Chatain	6.5	9.1	8.00	6.1	Egyptien	0	NA	3	16	NA	NA	Android	4	NA	PC	NA	NA
+327	TIS	2021	F	1996	160	39	40	Marron	Chatain	7	7.5	6.50	6	Egyptien	28	Chien	0	4.5	Moyenne	31	Android	3	1	C	G	NA
+328	TIS	2020	H	1995	170	42	10	Bleu	Blond	10	12	10.00	6	Egyptien	20	Aucun	0	7	Moyenne	10	Android	3	5	PC	D	NA
+329	TIS	2022	F	1998	160	39	25	Vert	Chatain	7.7	9.5	9.00	5.8	Grec	4	Chien	0	14.5	Faible	6	Android	2	1	PC	D	NA
 330	TIS	2021	H	1996	176	43	5	Marron	Chatain	7.5	9	8/	6	Egyptien	0	Aucun	0	11.25	Moyenne	0	Android	5	1	PC	NA	NA
 331	TIS	2021	F	1997	163	38	42	Marron	Chatain	8.5	9.7	8.70	6	Grec	10	Chien	0	7.75	Faible	1	Android	6	3	C	D	NA
-332	TIS	2021	F	1997	167	38	45	Marron	Chatain	7.5	8.5	6.00	7	Carre	40	Autre	1	12.50	Faible	2	Android	4	0	PC	D	NA
-333	TIS	2020	F	1996	164	38	30	Marron	Noir	8	8.5	7.50	6.3	Egyptien	0	Chien	0	7.50	Faible	0	IOS	1	2	C	D	NA
-334	TIS	2021	F	1998	172	38	40	Marron	Blond	8.5	10	8.50	6	Egyptien	6	Aucun	0	18.00	Faible	10	Android	3	3	PC	D	NA
-335	TIS	2020	H	1998	180	41	7	Marron	Chatain	8.5	10	9.00	8	Grec	140	Chat	6	10.00	Forte	10	Android	3	2	C	D	NA
-336	TIS	2020	F	1997	159.5	39	52	Marron	Noir	7.6	8.5	8.00	7	Egyptien	3	Autre	2	13.00	Faible	12	Android	4	3	PC	G	NA
-337	TIS	2020	H	1997	181	44	6	Marron	Blond	10	11.2	10.30	6.7	Carre	50	Autre	5	8.00	Forte	10	Android	8	10	PC	D	NA
-338	TIS	2020	H	1996	188	45	2.7	Marron	Noir	10	11	9.70	6.6	Egyptien	2	Chat	0	5.50	Faible	24	Android	2	1	PC	NA	NA
+332	TIS	2021	F	1997	167	38	45	Marron	Chatain	7.5	8.5	6.00	7	Carre	40	Autre	1	12.5	Faible	2	Android	4	0	PC	D	NA
+333	TIS	2020	F	1996	164	38	30	Marron	Noir	8	8.5	7.50	6.3	Egyptien	0	Chien	0	7.5	Faible	0	IOS	1	2	C	D	NA
+334	TIS	2021	F	1998	172	38	40	Marron	Blond	8.5	10	8.50	6	Egyptien	6	Aucun	0	18	Faible	10	Android	3	3	PC	D	NA
+335	TIS	2020	H	1998	180	41	7	Marron	Chatain	8.5	10	9.00	8	Grec	140	Chat	6	10	Forte	10	Android	3	2	C	D	NA
+336	TIS	2020	F	1997	159.5	39	52	Marron	Noir	7.6	8.5	8.00	7	Egyptien	3	Autre	2	13	Faible	12	Android	4	3	PC	G	NA
+337	TIS	2020	H	1997	181	44	6	Marron	Blond	10	11.2	10.30	6.7	Carre	50	Autre	5	8	Forte	10	Android	8	10	PC	D	NA
+338	TIS	2020	H	1996	188	45	2.7	Marron	Noir	10	11	9.70	6.6	Egyptien	2	Chat	0	5.5	Faible	24	Android	2	1	PC	NA	NA
 339	TIS	2022	F	1996	168	40	47	Bleu	Chatain	8	8.5	7.00	7	Egyptien	0	Autre	1	NA	Faible	0	Android	4	0	PC	G	NA
-340	TIS	2022	H	1998	175	41	3	Vert	Chatain	8.5	10	9.50	8	Grec	80	Chien	2	7.50	Forte	10	Android	2	3	PC	NA	NA
-341	TIS	2020	F	1997	167	39	35	Marron	Chatain	7.5	8	6.50	6	Egyptien	0	Chien	1	7.50	Faible	8	Android	2	1	PC	D	NA
-342	TIS	2020	F	1995	162	37	35	Vert	Chatain	8.5	9.2	9.00	5.8	Egyptien	0	Chien	1	2.50	Faible	3	IOS	3	3	PC	NA	NA
-343	TIS	2021	H	1998	186	45	3	Noir	Noir	9	9.5	9.00	7	Egyptien	15	Chien	0	15.00	Forte	3	Android	3	4	C	D	NA
-344	TIS	2020	F	1997	157	39	33	Bleu	Chatain	6.5	7.2	6.50	6	Egyptien	0	Chien	1	7.50	Moyenne	8	Android	5	4	PC	NA	NA
-345	TIS	2020	H	1997	182	43	15	Bleu	Chatain	7.8	8.5	7.50	6.3	Grec	100	Autre	0	9.00	Moyenne	0	Android	2	1	PC	D	NA
+340	TIS	2022	H	1998	175	41	3	Vert	Chatain	8.5	10	9.50	8	Grec	80	Chien	2	7.5	Forte	10	Android	2	3	PC	NA	NA
+341	TIS	2020	F	1997	167	39	35	Marron	Chatain	7.5	8	6.50	6	Egyptien	0	Chien	1	7.5	Faible	8	Android	2	1	PC	D	NA
+342	TIS	2020	F	1995	162	37	35	Vert	Chatain	8.5	9.2	9.00	5.8	Egyptien	0	Chien	1	2.5	Faible	3	IOS	3	3	PC	NA	NA
+343	TIS	2021	H	1998	186	45	3	Noir	Noir	9	9.5	9.00	7	Egyptien	15	Chien	0	15	Forte	3	Android	3	4	C	D	NA
+344	TIS	2020	F	1997	157	39	33	Bleu	Chatain	6.5	7.2	6.50	6	Egyptien	0	Chien	1	7.5	Moyenne	8	Android	5	4	PC	NA	NA
+345	TIS	2020	H	1997	182	43	15	Bleu	Chatain	7.8	8.5	7.50	6.3	Grec	100	Autre	0	9	Moyenne	0	Android	2	1	PC	D	NA
 346	TIS	2021	F	1996	172	36	32	Marron	Chatain	7.5	8.2	7.70	6	Egyptien	0	Chat	1	8.75	Faible	12	IOS	1	2	PC	D	NA
-348	TIS	2020	F	1996	162	37	30	Bleu	Blond	7.5	8.5	7.40	6	Grec	20	Chat	1	5.50	Faible	6	IOS	3	2	PC	D	NA
-349	TIS	2021	F	1995	169	39	32	Vert	Chatain	7.5	8.5	7.40	6	Grec	0	Aucun	0	8.50	Moyenne	12	Android	2	1	PC	D	NA
+348	TIS	2020	F	1996	162	37	30	Bleu	Blond	7.5	8.5	7.40	6	Grec	20	Chat	1	5.5	Faible	6	IOS	3	2	PC	D	NA
+349	TIS	2021	F	1995	169	39	32	Vert	Chatain	7.5	8.5	7.40	6	Grec	0	Aucun	0	8.5	Moyenne	12	Android	2	1	PC	D	NA
 350	TIS	2020	H	1995	176	42	5	Marron	Chatain	10	10.5	10.00	6.5	Egyptien	0	Chien	0	NA	Forte	20	Android	2	2	PC	D	NA
-351	TIS	2020	F	1996	162	37	50	Marron	Blond	8	8	8.00	6	Egyptien	10	Chat	0	8.00	Faible	10	Android	4	1	PC	G	NA
+351	TIS	2020	F	1996	162	37	50	Marron	Blond	8	8	8.00	6	Egyptien	10	Chat	0	8	Faible	10	Android	4	1	PC	G	NA
 352	TIS	2021	H	1999	175	40	8	Vert	Chatain	7.5	8.5	5.00	6.2	Egyptien	150	Chien	3	11.25	Moyenne	20	Android	3	2	PC	D	NA
 353	TIS	2021	F	1998	169	38	32	Marron	Chatain	7.1	8.2	7.20	NA	Egyptien	0	Chat	1	11.75	Moyenne	26	IOS	5	0	PC	D	NA
-354	TIS	2021	F	1997	164	37	25	Marron	Chatain	7.5	8.5	7.50	5.8	Egyptien	0	Chat	0	10.50	Moyenne	2	Android	2	1	PC	D	NA
-355	TIS	2021	H	1996	177	43	4	Marron	Chatain	8	9	8.00	6	Grec	120	Chat	2	6.00	Moyenne	0	Android	3	14	PC	D	NA
+354	TIS	2021	F	1997	164	37	25	Marron	Chatain	7.5	8.5	7.50	5.8	Egyptien	0	Chat	0	10.5	Moyenne	2	Android	2	1	PC	D	NA
+355	TIS	2021	H	1996	177	43	4	Marron	Chatain	8	9	8.00	6	Grec	120	Chat	2	6	Moyenne	0	Android	3	14	PC	D	NA
 356	TIS	2021	F	1997	157	37	35	Vert	Chatain	7.1	8	7.50	6.5	Egyptien	0	Chat	1	11.75	Moyenne	8	Android	2	1	C	D	NA
-357	TIS	2022	F	1998	152	40	20	Noir	Noir	7.5	8.5	7.50	7	Grec	0	Chat	0	5.00	Faible	20	Android	4	2	PC	D	NA
-358	TIS	2021	H	1998	174	41	3	Marron	Noir	9.5	10.3	9.80	6.5	Grec	36	Chat	0	13.50	Faible	20	IOS	7	4	PC	G	NA
-359	TIS	2021	F	1996	163	37	40	Bleu	Chatain	6.5	7.3	6.30	6	Egyptien	0	Autre	3	5.00	Faible	8	IOS	4	2	PC	NA	NA
-360	TIS	2021	H	1997	176	42	8	Bleu	Chatain	8.5	9.5	8.40	NA	Egyptien	40	Chat	6	9.00	Forte	4	Android	3	5	PC	D	NA
+357	TIS	2022	F	1998	152	40	20	Noir	Noir	7.5	8.5	7.50	7	Grec	0	Chat	0	5	Faible	20	Android	4	2	PC	D	NA
+358	TIS	2021	H	1998	174	41	3	Marron	Noir	9.5	10.3	9.80	6.5	Grec	36	Chat	0	13.5	Faible	20	IOS	7	4	PC	G	NA
+359	TIS	2021	F	1996	163	37	40	Bleu	Chatain	6.5	7.3	6.30	6	Egyptien	0	Autre	3	5	Faible	8	IOS	4	2	PC	NA	NA
+360	TIS	2021	H	1997	176	42	8	Bleu	Chatain	8.5	9.5	8.40	NA	Egyptien	40	Chat	6	9	Forte	4	Android	3	5	PC	D	NA
 361	TIS	2021	F	1998	160	37	28	Vert	Blond	9	10	9.00	6	Egyptien	5	Chat	0	14.75	Faible	1	IOS	4	0	PC	D	NA
 362	TIS	2021	F	1998	173	38	25	Marron	Chatain	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-363	TIS	2020	F	1995	158	38	30	Marron	Chatain	7.5	8	7.30	6	Egyptien	40	Chat	0	5.00	Moyenne	0	Android	3	1	PC	D	NA
-364	PRI	2021	F	1996	167	39	20	Noir	Noir	9	10	9.00	7	Grec	0	Chien	0	9.00	Faible	6	IOS	4	17	C	D	NA
-365	PRI	2021	H	1997	185	45	3	Bleu	Chatain	10	11.5	10.50	8	Egyptien	30	Aucun	0	15.50	Moyenne	40	IOS	3	3	PC	G	NA
-366	PRI	2021	F	1998	162	36	45	Vert	Chatain	9	11	10.00	7	Egyptien	0	Chien	1	10.00	Moyenne	8	IOS	4	4	PC	G	NA
-367	PRI	2021	H	1996	184	42	1	Marron	Noir	10	12	10.00	6	Egyptien	20	Aucun	0	1.50	Forte	10	Android	4	10	PC	D	NA
+363	TIS	2020	F	1995	158	38	30	Marron	Chatain	7.5	8	7.30	6	Egyptien	40	Chat	0	5	Moyenne	0	Android	3	1	PC	D	NA
+364	PRI	2021	F	1996	167	39	20	Noir	Noir	9	10	9.00	7	Grec	0	Chien	0	9	Faible	6	IOS	4	17	C	D	NA
+365	PRI	2021	H	1997	185	45	3	Bleu	Chatain	10	11.5	10.50	8	Egyptien	30	Aucun	0	15.5	Moyenne	40	IOS	3	3	PC	G	NA
+366	PRI	2021	F	1998	162	36	45	Vert	Chatain	9	11	10.00	7	Egyptien	0	Chien	1	10	Moyenne	8	IOS	4	4	PC	G	NA
+367	PRI	2021	H	1996	184	42	1	Marron	Noir	10	12	10.00	6	Egyptien	20	Aucun	0	1.5	Forte	10	Android	4	10	PC	D	NA
 368	PRI	2021	H	1999	184	45	6	Marron	Roux	10	12	11.00	6.5	Grec	140	Chien	1	12.75	Moyenne	4	Android	3	1	PC	D	NA
-369	PRI	2021	H	1998	184	45	6	Marron	Chatain	8	8	8.00	7	NA	40	Chat	1	20.00	Forte	8	Android	3	10	PC	D	NA
-370	PRI	2021	F	1997	165	37	55	Marron	Chatain	8	9	8.50	6	Grec	80	Chat	0	14.00	Moyenne	12	Android	3	1	PC	D	NA
+369	PRI	2021	H	1998	184	45	6	Marron	Chatain	8	8	8.00	7	NA	40	Chat	1	20	Forte	8	Android	3	10	PC	D	NA
+370	PRI	2021	F	1997	165	37	55	Marron	Chatain	8	9	8.50	6	Grec	80	Chat	0	14	Moyenne	12	Android	3	1	PC	D	NA
 371	PRI	2021	F	1998	170	39	45	Marron	Noir	8.5	9.5	8.00	7	Egyptien	10	Chien	2	12.25	Moyenne	12	Android	2	5	PC	NA	NA
-372	PRI	2021	H	1998	183	43	3	Marron	Chatain	9	10	8.50	7	Egyptien	0	Chien	1	16.00	Moyenne	8	IOS	2	1	PC	D	NA
+372	PRI	2021	H	1998	183	43	3	Marron	Chatain	9	10	8.50	7	Egyptien	0	Chien	1	16	Moyenne	8	IOS	2	1	PC	D	NA
 373	PRI	2021	H	1997	184	45	4	Marron	Chatain	10	11	10.00	8	Egyptien	30	Chat	5	8.75	Moyenne	6	Android	4	3	PC	D	NA
-374	PRI	2021	F	1998	165	39	45	Bleu	Blond	9	9.5	9.00	6	Egyptien	0	Chat	1	5.00	Faible	8	Android	2	1	PC	D	NA
-375	PRI	2021	F	1998	148	36	45	Marron	Chatain	7.5	8	7.50	6	Grec	0	Chat	1	13.00	Faible	5	Android	2	1	PC	NA	NA
-376	PRI	2021	F	1998	162	39	40	Marron	Chatain	7.5	8.5	7.50	7	Egyptien	0	Chien	0	13.50	Moyenne	8	Android	2	2	PC	D	NA
-377	PRI	2021	F	1997	161	39	2	Bleu	Chatain	7.5	8.5	7.50	6	Egyptien	20	Autre	2	15.00	Moyenne	20	Android	3	10	PC	D	NA
-378	PRI	2021	H	1997	176	45	2	Marron	Noir	8	9	8.00	6.5	Egyptien	180	Chien	0	15.50	Forte	10	Android	3	4	PC	D	NA
+374	PRI	2021	F	1998	165	39	45	Bleu	Blond	9	9.5	9.00	6	Egyptien	0	Chat	1	5	Faible	8	Android	2	1	PC	D	NA
+375	PRI	2021	F	1998	148	36	45	Marron	Chatain	7.5	8	7.50	6	Grec	0	Chat	1	13	Faible	5	Android	2	1	PC	NA	NA
+376	PRI	2021	F	1998	162	39	40	Marron	Chatain	7.5	8.5	7.50	7	Egyptien	0	Chien	0	13.5	Moyenne	8	Android	2	2	PC	D	NA
+377	PRI	2021	F	1997	161	39	2	Bleu	Chatain	7.5	8.5	7.50	6	Egyptien	20	Autre	2	15	Moyenne	20	Android	3	10	PC	D	NA
+378	PRI	2021	H	1997	176	45	2	Marron	Noir	8	9	8.00	6.5	Egyptien	180	Chien	0	15.5	Forte	10	Android	3	4	PC	D	NA
 379	PRI	2021	F	1998	148	36	40	Marron	Blond	6	7	5.50	6	Grec	0	Chien	2	7.25	Faible	8	IOS	2	0	PC	D	NA
-380	PRI	2021	H	1998	181	44	2	Marron	Noir	8	8.5	8.50	7	Egyptien	20	Autre	1	12.00	NA	24	Android	2	2	NA	NA	NA
-381	PRI	2021	F	1997	158	35	30	Marron	Noir	6.5	7	6.00	5.5	Egyptien	0	Chien	1	15.00	Moyenne	10	IOS	3	2	PC	NA	NA
+380	PRI	2021	H	1998	181	44	2	Marron	Noir	8	8.5	8.50	7	Egyptien	20	Autre	1	12	NA	24	Android	2	2	NA	NA	NA
+381	PRI	2021	F	1997	158	35	30	Marron	Noir	6.5	7	6.00	5.5	Egyptien	0	Chien	1	15	Moyenne	10	IOS	3	2	PC	NA	NA
 382	PRI	2021	H	1998	170	41	5	Marron	Noir	8.5	9	8.00	7	Egyptien	80	Chien	1	19.75	Moyenne	12	Android	1	2	C	G	NA
-383	PRI	2021	F	1999	163	38	8	Noir	Noir	7	8	7.00	6	Egyptien	0	Chien	0	14.00	Moyenne	10	IOS	3	5	PC	D	NA
-384	PRI	2021	H	1998	182	43	3	Bleu	Chatain	8	9	7.00	6	Egyptien	30	Chien	0	9.00	Moyenne	10	Android	3	1	PC	NA	NA
-385	PRI	2021	F	1998	168	40	20	Marron	Blond	6	7	5.50	6	Egyptien	0	Chat	0	5.50	Moyenne	3	Android	3	4	PC	D	NA
+383	PRI	2021	F	1999	163	38	8	Noir	Noir	7	8	7.00	6	Egyptien	0	Chien	0	14	Moyenne	10	IOS	3	5	PC	D	NA
+384	PRI	2021	H	1998	182	43	3	Bleu	Chatain	8	9	7.00	6	Egyptien	30	Chien	0	9	Moyenne	10	Android	3	1	PC	NA	NA
+385	PRI	2021	F	1998	168	40	20	Marron	Blond	6	7	5.50	6	Egyptien	0	Chat	0	5.5	Moyenne	3	Android	3	4	PC	D	NA
 386	PRI	2021	F	1999	171	39	45	Bleu	Blond	7	8	7.50	NA	Egyptien	0	Chat	1	11.75	Faible	0	IOS	3	3	PC	D	NA
-387	PRI	2021	H	NA	185	44	15	Bleu	Chatain	7	8	5.00	6	Grec	80	Chat	1	5.50	Faible	24	Android	1	0	PC	D	NA
-388	PRI	2021	H	NA	180	45	2.5	Bleu	Chatain	8	10	10.00	7	Egyptien	30	Chien	1	2.50	Faible	30	Android	4	1	PC	D	NA
-399	TIS	2022	H	1998	180	45	7	Marron	Chatain	8	9	8.00	NA	Egyptien	20	Chat	1	15.00	Moyenne	20	Android	3	3	C	D	52
-400	TIS	2022	F	1998	157	37	30	Marron	Roux	7	8	7.00	5	Egyptien	50	Chat	0	12.00	Moyenne	15	Android	7	3	PC	D	84
-401	TIS	2022	F	1998	173	40	45	Marron	Chatain	8.5	9.5	8.20	6.5	Egyptien	0	Chien	1	10.60	Moyenne	10	IOS	2	2	PC	D	69
-402	TIS	2022	F	1999	172	40	55	Marron	Chatain	8	8.5	7.50	6.5	Grec	0	Chien	2	17.20	Moyenne	16	Android	3	3	PC	D	39
-403	TIS	2022	H	1999	179	42	5	Marron	Chatain	9	11	8.00	NA	Egyptien	NA	Chat	1	17.50	Moyenne	35	Android	3	3	PC	D	84
-404	TIS	2022	F	1998	172	41	40	Marron	Roux	8.5	9	8.50	6	Egyptien	0	Aucun	0	13.00	Moyenne	15	IOS	3	2	PC	D	84
-405	TIS	2022	F	1999	165	41	63	Marron	Chatain	7	8	7.00	6	Grec	110	Chat	4	11.50	Moyenne	8	Android	4	1	PC	D	4
-406	TIS	2022	F	1998	170	39	20	Marron	Chatain	7.5	8.2	7.00	6	Egyptien	0	Chat	2	13.50	Faible	20	Android	3	0	PC	D	52
-407	TIS	2022	F	1999	162	37	30	Marron	Chatain	7.5	8.7	7.00	5.5	Grec	0	Chat	1	14.00	Moyenne	4	Android	3	1	PC	D	95
-408	TIS	2022	F	1998	176	40	60	Marron	Roux	8	9	7.00	6	Egyptien	0	Chat	0	17.40	Faible	6	Android	3	1	PC	D	72
-409	TIS	2022	F	1998	168	39	30	Vert	Chatain	7.5	8	7.50	6	Egyptien	0	Chat	1	13.50	Moyenne	12	IOS	3	0	C	D	75
-410	TIS	2022	F	1999	169	41	27	Marron	Chatain	7	9	7.50	6	Egyptien	0	Aucun	0	12.10	Moyenne	0	Android	3	8	C	D	72
-411	TIS	2022	F	1997	158	39	65	Marron	Noir	8	8	7.00	6	Egyptien	32	Chien	3	7.20	Moyenne	25	IOS	2	2	PC	D	2A
-412	TIS	2022	F	1998	178	40	60	Bleu	Chatain	7	9		NA	Grec	0	Autre	6	16.00	Faible	20	IOS	3	3	PC	D	26
-413	TIS	2022	H	1999	180	43	5	Bleu	Chatain	8	9	8.00	7	Egyptien	30	Autre	0	13.00	Forte	20	Android	3	1		D	32
-414	TIS	2022	F	1999	177	42	10	Marron	Noir	7.5	9	7.50	NA	NA	0	Chien	0	12.20	NA	0	Android	2	0	PC	D	
-415	TIS	2020	F	1998	159	38	7	Marron	Chatain	NA	NA		NA		0	Autre	1	NA	NA	2	Android	3	0	PC	NA	NA
-416	TIS	2022	H	1998	170	43	2	Bleu	Blond	8	8.5	8.00	6.5	Egyptien	15	Chien	1	5.00	Moyenne	20	IOS	2	1	PC	D	93
-417	TIS	2022	H	1999	183	44	2	Marron	Noir	8	9	8.00	NA	Grec	20	Aucun	0	8.00	Moyenne	0	IOS	2	5	PC	D	NA
-418	TIS	2022	F	1999	159	36	40	Vert	Chatain	7	7.5	6.00	7	Grec	NA	Chat	1	13.50	Moyenne	3	Android	4	8	C	D	75
-419	PRI	2022	H	1995	168	40	5	Marron	Chatain	8	9	7.50	7	Egyptien	30	Chat	1	7.50	Forte	5	Android	1	3	PC	D	93
+387	PRI	2021	H	NA	185	44	15	Bleu	Chatain	7	8	5.00	6	Grec	80	Chat	1	5.5	Faible	24	Android	1	0	PC	D	NA
+388	PRI	2021	H	NA	180	45	2.5	Bleu	Chatain	8	10	10.00	7	Egyptien	30	Chien	1	2.5	Faible	30	Android	4	1	PC	D	NA
+399	TIS	2022	H	1998	180	45	7	Marron	Chatain	8	9	8.00	NA	Egyptien	20	Chat	1	15	Moyenne	20	Android	3	3	C	D	52
+400	TIS	2022	F	1998	157	37	30	Marron	Roux	7	8	7.00	5	Egyptien	50	Chat	0	12	Moyenne	15	Android	7	3	PC	D	84
+401	TIS	2022	F	1998	173	40	45	Marron	Chatain	8.5	9.5	8.20	6.5	Egyptien	0	Chien	1	10.6	Moyenne	10	IOS	2	2	PC	D	69
+402	TIS	2022	F	1999	172	40	55	Marron	Chatain	8	8.5	7.50	6.5	Grec	0	Chien	2	17.2	Moyenne	16	Android	3	3	PC	D	39
+403	TIS	2022	H	1999	179	42	5	Marron	Chatain	9	11	8.00	NA	Egyptien	NA	Chat	1	17.5	Moyenne	35	Android	3	3	PC	D	84
+404	TIS	2022	F	1998	172	41	40	Marron	Roux	8.5	9	8.50	6	Egyptien	0	Aucun	0	13	Moyenne	15	IOS	3	2	PC	D	84
+405	TIS	2022	F	1999	165	41	63	Marron	Chatain	7	8	7.00	6	Grec	110	Chat	4	11.5	Moyenne	8	Android	4	1	PC	D	4
+406	TIS	2022	F	1998	170	39	20	Marron	Chatain	7.5	8.2	7.00	6	Egyptien	0	Chat	2	13.5	Faible	20	Android	3	0	PC	D	52
+407	TIS	2022	F	1999	162	37	30	Marron	Chatain	7.5	8.7	7.00	5.5	Grec	0	Chat	1	14	Moyenne	4	Android	3	1	PC	D	95
+408	TIS	2022	F	1998	176	40	60	Marron	Roux	8	9	7.00	6	Egyptien	0	Chat	0	17.4	Faible	6	Android	3	1	PC	D	72
+409	TIS	2022	F	1998	168	39	30	Vert	Chatain	7.5	8	7.50	6	Egyptien	0	Chat	1	13.5	Moyenne	12	IOS	3	0	C	D	75
+410	TIS	2022	F	1999	169	41	27	Marron	Chatain	7	9	7.50	6	Egyptien	0	Aucun	0	12.1	Moyenne	0	Android	3	8	C	D	72
+411	TIS	2022	F	1997	158	39	65	Marron	Noir	8	8	7.00	6	Egyptien	32	Chien	3	7.2	Moyenne	25	IOS	2	2	PC	D	2A
+412	TIS	2022	F	1998	178	40	60	Bleu	Chatain	7	9	NA	NA	Grec	0	Autre	6	16	Faible	20	IOS	3	3	PC	D	26
+413	TIS	2022	H	1999	180	43	5	Bleu	Chatain	8	9	8.00	7	Egyptien	30	Autre	0	13	Forte	20	Android	3	1	NA	D	32
+414	TIS	2022	F	1999	177	42	10	Marron	Noir	7.5	9	7.50	NA	NA	0	Chien	0	12.2	NA	0	Android	2	0	PC	D	NA
+415	TIS	2020	F	1998	159	38	7	Marron	Chatain	NA	NA	NA	NA	NA	0	Autre	1	NA	NA	2	Android	3	0	PC	NA	NA
+416	TIS	2022	H	1998	170	43	2	Bleu	Blond	8	8.5	8.00	6.5	Egyptien	15	Chien	1	5	Moyenne	20	IOS	2	1	PC	D	93
+417	TIS	2022	H	1999	183	44	2	Marron	Noir	8	9	8.00	NA	Grec	20	Aucun	0	8	Moyenne	0	IOS	2	5	PC	D	NA
+418	TIS	2022	F	1999	159	36	40	Vert	Chatain	7	7.5	6.00	7	Grec	NA	Chat	1	13.5	Moyenne	3	Android	4	8	C	D	75
+419	PRI	2022	H	1995	168	40	5	Marron	Chatain	8	9	7.50	7	Egyptien	30	Chat	1	7.5	Forte	5	Android	1	3	PC	D	93
 420	TIS	2022	F	1997	163	38	46	Marron	Chatain	8.5	9.9	8.90	6.4	Grec	35	Chien	1	9.25	Moyenne	1	Android	6	1	C	D	27
-421	PRI	2022	H	1999	174	42	6	Marron	Blond	9	9.6	6.50	7.5	Egyptien	10	Chat	0	18.80	Moyenne	20	Android	3	2	PC	G	34
-422	PRI	2022	F	1997	155	37	25	Noir	Noir	7	7.5	7.00	7	Egyptien	0	Chat	1	15.50	Moyenne	2	IOS	2	1	PC	NA	NA
-423	PRI	2022	H	1998	196	46	8	Marron	Chatain	9.5	10.2	9.10	7	Egyptien	12	Chat	1	10.50	Moyenne	8	IOS	3	3	C	D	
+421	PRI	2022	H	1999	174	42	6	Marron	Blond	9	9.6	6.50	7.5	Egyptien	10	Chat	0	18.8	Moyenne	20	Android	3	2	PC	G	34
+422	PRI	2022	F	1997	155	37	25	Noir	Noir	7	7.5	7.00	7	Egyptien	0	Chat	1	15.5	Moyenne	2	IOS	2	1	PC	NA	NA
+423	PRI	2022	H	1998	196	46	8	Marron	Chatain	9.5	10.2	9.10	7	Egyptien	12	Chat	1	10.5	Moyenne	8	IOS	3	3	C	D	NA
 424	TIS	2022	F	1999	169	38	20	Marron	Chatain	6.5	7	6.50	6	Egyptien	0	Aucun	0	9.75	Faible	10	Android	4	1	PC	D	78
-425	TIS	2022	F	1999	165	38	32	Bleu	Blond	7.5	8	7.00	5.5	Egyptien	0	Chat	1	15.00	Moyenne	16	Android	2	1	PC	D	
-426	PRI	2022	H	1999	165	40	3	Bleu	Chatain	8.5	9.7	9.00	6.5	Egyptien	0	Chat	1	11.00	Moyenne	20	Android	2	4	PC	D	84
-427	PRI	2022	F	1998	170	39	30	Marron	Chatain	8	9	8.00	7	NA	0	Autre	0	13.00	Moyenne	15	IOS	2	1	PC	D	84
-428	PRI	2022	F	1999	165	38	20	Marron	Noir	8	7.5	7.00	6	Egyptien	0	Autre	0	7.20	Moyenne	6	IOS	3	1	PC	NA	
-429	PRI	2022	F	1999	164	39	40	Marron	Chatain	8.5	8.3	7.00	5	Egyptien	0	Chat	0	9.50	Moyenne	0	IOS	3	1	PC	D	38
+425	TIS	2022	F	1999	165	38	32	Bleu	Blond	7.5	8	7.00	5.5	Egyptien	0	Chat	1	15	Moyenne	16	Android	2	1	PC	D	NA
+426	PRI	2022	H	1999	165	40	3	Bleu	Chatain	8.5	9.7	9.00	6.5	Egyptien	0	Chat	1	11	Moyenne	20	Android	2	4	PC	D	84
+427	PRI	2022	F	1998	170	39	30	Marron	Chatain	8	9	8.00	7	NA	0	Autre	0	13	Moyenne	15	IOS	2	1	PC	D	84
+428	PRI	2022	F	1999	165	38	20	Marron	Noir	8	7.5	7.00	6	Egyptien	0	Autre	0	7.2	Moyenne	6	IOS	3	1	PC	NA	NA
+429	PRI	2022	F	1999	164	39	40	Marron	Chatain	8.5	8.3	7.00	5	Egyptien	0	Chat	0	9.5	Moyenne	0	IOS	3	1	PC	D	38
 430	TIS	2023	F	1999	171	37	45	Vert	Blond	7.5	8	6.50	7	Egyptien	0	Chien	1	NA	Moyenne	0	Android	2	2	PC	D	53
-431	TIS	2022	F	2000	173	39	38	Marron	Noir	8.5	9.5	8.00	7	Egyptien	0	Chat	1	6.00	Moyenne	14	Android	1	2	PC	D	
+431	TIS	2022	F	2000	173	39	38	Marron	Noir	8.5	9.5	8.00	7	Egyptien	0	Chat	1	6	Moyenne	14	Android	1	2	PC	D	NA
 432	TIS	2022	F	2000	170	39	29	Marron	Noir	8	9	8.50	6	Egyptien	0	Chat	0	12.33	Moyenne	16	Android	2	4	PC	D	84
-433	PRI	2022	H	1999	181	43	5	Marron	Chatain	8	9	8.50	NA	Egyptien	10	Chat	2	14.50	Moyenne	0	Android	1	2	PC	D	62
-434	PRI	2022	H	1997	176	42	5	Bleu	Blond	7.7	8.5	7.50	NA	Egyptien	20	Chien	0	4.50	Faible	24	Android	1	1	PC	D	7
-435	TIS	2022	F	1999	160	37	20	Marron	Chatain	7	8	7.00	6.5	Egyptien	0	Aucun	0	18.80	Faible	2	Android	2	1	PC	D	
-436	TIS	2023	F	1996	158	37	25	Noir	Chatain	7.5	8.4	7.30	6.8	Egyptien	0	Aucun	0	14.00	Moyenne	1	Android	4	2	PC	D	76
-437	TIS	2022	F	1997	162	37	45	Marron	Chatain	7.3	8.5	8.00	6	Egyptien	0	Chat	1	4.50	Faible	2	IOS	2	1	PC	G	57
-438	PRI	2022	H	1997	187	45	2	Marron	Noir	7.8	8.4	8.00	NA	Egyptien	20	Aucun	0	8.00	Moyenne	50	IOS	3	5	C	D	NA
-439	PRI	2022	F	1998	165	39	45	Bleu	Blond	9	9.5	9.00	6	Egyptien	0	Chat	1	4.50	Faible	32	Android	2	1	PC	D	6
-440		2022	F	1999	173	39	40	Bleu	Chatain	8.5	9	8.30	6.5	Carre	5	Chat	0	14.00	Moyenne	10	Android	3	2	PC	D	93
-441	PRI	2022	F	1999	168	39	15	Marron	Noir	8.5	9.5	8.50	7	Grec	10	Aucun	0	18.50	Moyenne	15	Android	3	1	C	D	75
-442	TIS	2022	F	1999	150	36	45	Bleu	Blond	7	7.5	7.00	5.5	Egyptien	3	Chien	1	12.50	Faible	16	Android	3	3	PC	D	38
-443	TIS	2022	F	1998	170	38	30	Marron	Chatain	6.5	7	6.50	5.5	Egyptien	5	Chien	2	7.30	Faible	20	IOS	3	0	PC	G	83
-444	GE	2021	H	1994	189	43	5	Marron	Noir	NA	NA		NA	Grec	40	Chien	0		Forte	5	IOS	4	2	PC	D	52
+433	PRI	2022	H	1999	181	43	5	Marron	Chatain	8	9	8.50	NA	Egyptien	10	Chat	2	14.5	Moyenne	0	Android	1	2	PC	D	62
+434	PRI	2022	H	1997	176	42	5	Bleu	Blond	7.7	8.5	7.50	NA	Egyptien	20	Chien	0	4.5	Faible	24	Android	1	1	PC	D	7
+435	TIS	2022	F	1999	160	37	20	Marron	Chatain	7	8	7.00	6.5	Egyptien	0	Aucun	0	18.8	Faible	2	Android	2	1	PC	D	NA
+436	TIS	2023	F	1996	158	37	25	Noir	Chatain	7.5	8.4	7.30	6.8	Egyptien	0	Aucun	0	14	Moyenne	1	Android	4	2	PC	D	76
+437	TIS	2022	F	1997	162	37	45	Marron	Chatain	7.3	8.5	8.00	6	Egyptien	0	Chat	1	4.5	Faible	2	IOS	2	1	PC	G	57
+438	PRI	2022	H	1997	187	45	2	Marron	Noir	7.8	8.4	8.00	NA	Egyptien	20	Aucun	0	8	Moyenne	50	IOS	3	5	C	D	NA
+439	PRI	2022	F	1998	165	39	45	Bleu	Blond	9	9.5	9.00	6	Egyptien	0	Chat	1	4.5	Faible	32	Android	2	1	PC	D	6
+440	NA	2022	F	1999	173	39	40	Bleu	Chatain	8.5	9	8.30	6.5	Carre	5	Chat	0	14	Moyenne	10	Android	3	2	PC	D	93
+441	PRI	2022	F	1999	168	39	15	Marron	Noir	8.5	9.5	8.50	7	Grec	10	Aucun	0	18.5	Moyenne	15	Android	3	1	C	D	75
+442	TIS	2022	F	1999	150	36	45	Bleu	Blond	7	7.5	7.00	5.5	Egyptien	3	Chien	1	12.5	Faible	16	Android	3	3	PC	D	38
+443	TIS	2022	F	1998	170	38	30	Marron	Chatain	6.5	7	6.50	5.5	Egyptien	5	Chien	2	7.3	Faible	20	IOS	3	0	PC	G	83
+444	GE	2021	H	1994	189	43	5	Marron	Noir	NA	NA	NA	NA	Grec	40	Chien	0	NA	Forte	5	IOS	4	2	PC	D	52
 445	INFO	2020	H	1996	180	45	5	Vert	Blond	9.5	10.5	10.00	6	Carre	15	Chien	1	NA	Moyenne	30	Android	5	1	C	D	53
-446		2027	H	2002	172	42	4	Bleu	Noir	NA	NA		NA	Egyptien	12	Chat	1	NA	Moyenne	8	Android	9	7	PC	G	NA
+446	NA	2027	H	2002	172	42	4	Bleu	Noir	NA	NA	NA	NA	Egyptien	12	Chat	1	NA	Moyenne	8	Android	9	7	PC	G	NA
 447	TIS	2023	H	1999	178	44	6	Marron	Chatain	8	8.5	8.00	5	Grec	120	Chat	1	NA	Moyenne	20	Android	2	2	PC	D	93
 448	PRI	2023	H	2000	191	45	7.6	Marron	Noir	10	11	10	8	Egyptien	80	Autre	9	NA	Moyenne	50	Android	3	2	C	D	31
 449	PRI	2023	H	2000	171	41	8.5	Vert	Chatain	7.5	8	7.5	6	Egyptien	200	Chat	6	0	Forte	0	Android	2	2	PC	D	6
 450	PRI	2023	F	2001	167	38	33	Vert	Noir	7	8	7	6.3	Egyptien	20	Chat	1	14.5	Faible	5	Android	3	1	PC	D	84
 451	TIS	2023	H	2000	170	40	6	Marron	Chatain	7	8	7	6	Egyptien	100	Chien	0	NA	Moyenne	25	IOS	2	4	PC	G	93
 452	PRI	2023	H	2000	180	44	4	Vert	Noir	7.5	8.5	8	6	Egyptien	30	Chat	1	NA	Moyenne	0	IOS	2	1	PC	D	38
-453	PRI	2023	H	2000	169	41	6	Vert	Noir	9	10	9	6.5		100	Chien	1	NA	Moyenne	24	Android	3	0	PC	D	53
-454		NA		NA	NA	NA	NA			NA	NA	7.7	5	Egyptien	0	Aucun	0		Faible	30	Android	3	1	C	D	77
+453	PRI	2023	H	2000	169	41	6	Vert	Noir	9	10	9	6.5	NA	100	Chien	1	NA	Moyenne	24	Android	3	0	PC	D	53
+454	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.7	5	Egyptien	0	Aucun	0	NA	Faible	30	Android	3	1	C	D	77
 455	PRI	2023	H	2000	178	42	5	Noir	Noir	8	9	8	6	Grec	20	NAC	0	NA	Moyenne	10	Android	3	6	PC	G	69
 456	PRI	2023	H	2000	186	43	9	Bleu	Chatain	8	10	8.7	6.2	Egyptien	40	Chien	0	NA	Moyenne	56	Android	3	0	PC	D	91
 457	TIS	2023	F	2000	160	37	40	Noir	Noir	7	7.5	6.5	5.8	Grec	6	Chien	1	NA	Faible	35	IOS	2	1	PC	D	50
@@ -380,15 +380,15 @@ ID	Etudes	Derniere_Annee_Etude	Sexe	Annee_Naissance	Taille_en_cm	Pointure	Longue
 461	PRI	2023	F	2000	169	38	43	Marron	Chatain	8.5	9.5	9	7	Egyptien	60	Chien	4	NA	Moyenne	10	IOS	2	1	PC	NA	77
 462	PRI	2023	H	1998	175	42	3	Marron	Chatain	9.5	10	9	7	Grec	100	Chien	1	NA	Faible	10	IOS	1	1	PC	D	59
 463	TIS	2023	H	2000	190	46	21	Marron	Noir	9	10	6.5	6	Grec	60	Chien	0	NA	Faible	48	IOS	3	1	PC	D	84
-464	PRI	2023		2000	169	39	7	Marron	Noir	7.5	8.5	7	NA	Egyptien	15	Chien	0	NA	Faible	100	IOS	1	1	PC	D	
+464	PRI	2023	NA	2000	169	39	7	Marron	Noir	7.5	8.5	7	NA	Egyptien	15	Chien	0	NA	Faible	100	IOS	1	1	PC	D	NA
 465	TIS	2023	F	2000	159	36	9	Marron	Chatain	5.9	6.7	6	5.5	Egyptien	50	Autre	1	NA	Faible	4	Android	2	2	PC	D	57
-467	TIS	2023	H	2000	196	45	25	Marron	Noir	8.9	10	9.1	9		25	Chat	0	NA	Faible	15	Android	3	2	PC	D	35
-468	PRI	2023	H	2000	178	41	8	Marron	Roux	8	9.2	7.5	8		280	Chat	0		Moyenne	30	IOS	2	5	PC	D	57
+467	TIS	2023	H	2000	196	45	25	Marron	Noir	8.9	10	9.1	9	NA	25	Chat	0	NA	Faible	15	Android	3	2	PC	D	35
+468	PRI	2023	H	2000	178	41	8	Marron	Roux	8	9.2	7.5	8	NA	280	Chat	0	NA	Moyenne	30	IOS	2	5	PC	D	57
 469	PRI	2023	F	2001	161	36	62	Marron	Chatain	7	8	7	6	Egyptien	10	Chat	0	NA	Faible	35	IOS	5	3	PC	D	34
 470	PRI	2023	F	1999	169	39	30	Marron	Chatain	9	9.5	8	5.5	Egyptien	10	Autre	6	NA	Faible	2	Android	4	1	PC	D	52
 471	TIS	2023	F	1999	165	38	54	Marron	Chatain	7	8	7	NA	Grec	45	Chien	3	NA	Moyenne	0	Android	3	1	PC	D	25
-472	PRI	2023	F	2000	168	38	45	Marron	Chatain	7	8	6	6.5	Egyptien	0	Chat	14		Faible	20	IOS	2	1	PC	D	38
-473	PRI	2023	F	1998	165	39	20	Noir	Noir	8	9	8	NA	Egyptien	0	Chien	0	NA	Moyenne	0	IOS	6	1	PC	D	
+472	PRI	2023	F	2000	168	38	45	Marron	Chatain	7	8	6	6.5	Egyptien	0	Chat	14	NA	Faible	20	IOS	2	1	PC	D	38
+473	PRI	2023	F	1998	165	39	20	Noir	Noir	8	9	8	NA	Egyptien	0	Chien	0	NA	Moyenne	0	IOS	6	1	PC	D	NA
 474	TIS	2023	F	2001	170	39	20	Marron	Chatain	7.5	8	7	7	Grec	60	Chien	2	NA	Faible	40	Android	3	3	PC	D	84
 475	PRI	2023	F	2001	163	38	NA	Noir	Noir	6	7	6	7	Egyptien	0	Chien	2	NA	Faible	0	IOS	1	1	PC	D	84
 476	TIS	2023	F	2000	159	36	27	Bleu	Chatain	8	8.5	8	6	Carre	80	Chat	0	NA	Faible	0	IOS	2	3	PC	D	84
@@ -399,13 +399,13 @@ ID	Etudes	Derniere_Annee_Etude	Sexe	Annee_Naissance	Taille_en_cm	Pointure	Longue
 481	TIS	2023	H	2000	175	44	6	Marron	Chatain	9.5	10.5	9.7	6.5	Grec	6	Chien	0	NA	Moyenne	16	Android	6	1	PC	D	NA
 482	TIS	2023	F	1999	176	41	40	Vert	Chatain	8.5	10	9	6	Egyptien	3	Chien	1	NA	Moyenne	0	Android	3	1	PC	D	28
 483	TIS	2023	H	1998	180	42	20	Noir	Noir	7.5	8.5	7.5	NA	Egyptien	60	Aucun	3	NA	Faible	10	Android	2	1	C	D	93
-484	PRI	2023	H	2000	180	42	5	Bleu	Noir	NA	NA		NA		NA		NA			NA		NA	NA			
+484	PRI	2023	H	2000	180	42	5	Bleu	Noir	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
 485	PRI	2023	F	2000	170	39	55	Bleu	Noir	8	9	8	5.5	Egyptien	0	Autre	2	NA	Faible	4	Android	9	1	PC	D	76
 486	TIS	2023	F	2000	167	40	20	Noir	Noir	9	9.5	6.5	5	Egyptien	0	Chien	0	NA	Faible	8	Android	4	1	PC	D	973
 487	TIS	2023	F	1997	176	40	NA	Marron	Noir	8	9	7.5	NA	Grec	0	Chien	2	NA	Faible	4	IOS	4	2	PC	D	69
-488	PRI	2023		1998	175	38	10	Marron	Noir	9.5	11	10.5	5	Egyptien	0	Aucun	0	NA	Faible	0	IOS	4	0	C	D	NA
+488	PRI	2023	NA	1998	175	38	10	Marron	Noir	9.5	11	10.5	5	Egyptien	0	Aucun	0	NA	Faible	0	IOS	4	0	C	D	NA
 489	PRI	2023	H	2000	181	43.5	5	Marron	Chatain	11	12	11.5	6	Grec	4	Aucun	0	NA	Faible	40	Android	1	1	PC	D	13
-490	PRI	2023	F	1999	173	39	30	Bleu	Chatain	9	10	9	NA	Egyptien	0	Chat	3		Faible	0	Android	3	1	PC	D	84
+490	PRI	2023	F	1999	173	39	30	Bleu	Chatain	9	10	9	NA	Egyptien	0	Chat	3	NA	Faible	0	Android	3	1	PC	D	84
 491	PRI	2023	F	2000	173	40	20	Marron	Chatain	7.5	8	7	6	Egyptien	0	Aucun	0	NA	Moyenne	0	Android	2	1	C	D	75
 492	PRI	2023	H	2001	171	43	1	Bleu	Roux	7.5	9	8	5.5	Egyptien	100	Chien	1	NA	Forte	30	IOS	3	1	NA	D	62
 493	PRI	2023	H	2001	185	44	15	Vert	Chatain	11	12	11.5	6	Grec	0	Aucun	4	NA	Moyenne	10	Android	2	1	PC	D	84
@@ -413,17 +413,17 @@ ID	Etudes	Derniere_Annee_Etude	Sexe	Annee_Naissance	Taille_en_cm	Pointure	Longue
 495	TIS	2023	F	1999	162	36	35	Marron	Noir	7.5	8	6.5	6.5	Egyptien	30	Chien	0	NA	Faible	4	Android	3	1	PC	D	44
 496	TIS	2023	F	1999	173	41	45	Bleu	Chatain	9	10	9	7	Egyptien	0	Chien	0	NA	Moyenne	32	IOS	5	1	PC	D	75
 497	TIS	2023	F	2000	163	40	60	Vert	Chatain	7.6	8.5	8	6	Egyptien	40	Chien	11	NA	Faible	4	IOS	2	3	PC	D	84
-498	TIS	2023	F	2001	172	39	NA	Bleu	Chatain	NA	NA		NA	Egyptien	10	Aucun	0	NA	Moyenne	0	IOS	3	4	PC	D	95
+498	TIS	2023	F	2001	172	39	NA	Bleu	Chatain	NA	NA	NA	NA	Egyptien	10	Aucun	0	NA	Moyenne	0	IOS	3	4	PC	D	95
 499	TIS	2023	F	2000	175	41	60	Marron	Chatain	7.5	8.8	7.6	6	Egyptien	5	Chien	0	NA	Faible	70	Android	2	2	C	D	86
 500	TIS	2023	F	2000	168	38	50	Marron	Chatain	9	9.5	8.5	7	Egyptien	4	Chien	2	NA	Moyenne	8	Android	2	2	PC	D	84
-501	TIS	2023	H	1999	185	47	4	Vert	Chatain	10	11	10.5	7.5	Grec	0	Chien	0		Moyenne	20	Android	3	3	PC	D	32
+501	TIS	2023	H	1999	185	47	4	Vert	Chatain	10	11	10.5	7.5	Grec	0	Chien	0	NA	Moyenne	20	Android	3	3	PC	D	32
 502	TIS	2024	F	2000	160	37	90	Marron	Chatain	7.7	8	7.2	5.6	Egyptien	0	Aucun	0	NA	Faible	0	IOS	2	3	PC	D	84
 503	TIS	2023	H	2000	195	46	5	Vert	Chatain	10	11	10	7	Grec	150	Chat	1	NA	Faible	10	Android	1	3	C	D	76
-504	PRI	2023	F	1999	159	36	40	Marron	Chatain	7.1	7.4	6.8	NA	Egyptien	90	Chat	2	NA	Moyenne	5	Android	3	1	PC		
+504	PRI	2023	F	1999	159	36	40	Marron	Chatain	7.1	7.4	6.8	NA	Egyptien	90	Chat	2	NA	Moyenne	5	Android	3	1	PC	NA	NA
 505	PRI	2023	F	1998	168	36	32	Vert	Chatain	7	7.5	6.9	6.5	Grec	0	Autre	6	NA	Moyenne	14	IOS	3	0	PC	G	38
 506	TIS	2023	F	2001	168	38	63	Vert	Chatain	7.8	9	7.6	6.5	Egyptien	0	Chien	1	18.75	Moyenne	5	Android	2	2	PC	D	27
 507	TIS	2023	F	1999	172	40	40	Marron	Chatain	7.5	8.2	7.4	6.2	Egyptien	0	Chien	0	NA	Moyenne	0	IOS	2	3	PC	D	84
-508	TIS	2023	H	1999	188	46	10	Marron	Chatain	9	10	9	7	Egyptien	10	Chien	3	NA	Moyenne	6	IOS	4	4	PC	D	
+508	TIS	2023	H	1999	188	46	10	Marron	Chatain	9	10	9	7	Egyptien	10	Chien	3	NA	Moyenne	6	IOS	4	4	PC	D	NA
 509	TIS	2023	F	1999	162	38	45	Vert	Chatain	7	7.5	6.5	NA	Egyptien	0	Autre	0	NA	Faible	0	IOS	6	1	PC	D	84
 510	PRI	2023	F	1999	170	40	35	Bleu	Chatain	8.5	9.9	9	5.8	Egyptien	3	Chat	4	NA	Moyenne	5	IOS	2	3	PC	D	84
 511	PRI	2023	H	2000	180	42	7	Vert	Chatain	7.8	9	8	5	Egyptien	80	Chat	2	14.5	Moyenne	25	Android	3	1	PC	D	38

@@ -1,0 +1,93 @@
+
+2 HISTOGRAMMES DANS LA MEME FENETRE
+> par(mfrow=c(2,1))
+
+TAILLE ET PAS DE L'HIST
+> tailles.breaks <- seq(145, 205, 2)
+
+CREATION DE l'HIST
+> hist(d.f, col="pink", breaks=tailles.breaks)
+> hist(d.h, col="darkblue", breaks=tailles.breaks)
+
+RECUPERATION DES TAILLES HOMME ET FEMMES
+d.h <- d.s[d.s$Sexe=="H", 2]
+d.f <- d.s[d.s$Sexe=="F", 2]
+
+REPRESENTATION QUANTILE 
+
+> qqnorm(d.f, col="pink", pch=20)
+> qqline(d.f, col="red")
+> qqnorm(d.h, col="blue", pch=20)
+> qqline(d.h, col="red")
+> 
+
+TEST DE SHAPIRO-WILK
+shapiro.test(d.h) 
+Hypothèse : les 2 distributions sont égales (femmes et loi normale)
+p-value : Probabilité que la mesure soit due au hasard.
+
+Pour les femmes : p-value < 0.05 donc elle ne suit pas une loi normale
+Pour les hommes : p-value > 0.05
+
+Test de student : 
+
+Sert à comparer les moyennes
+Mais la moyenne est paramètre d'une loi normale, or la distribution des femmes ne suit pas une loi normale.
+
+> t.test(d.f, d.h, var.equal=T)
+
+        Two Sample t-test
+
+data:  d.f and d.h
+t = -21.639, df = 406, p-value < 2.2e-16
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -15.13257 -12.61211
+sample estimates:
+mean of x mean of y 
+ 165.5755  179.4479 
+
+ p-value < 0.05 (probabilité que l'écart entre les 2 populations soit due au hasard)
+ Donc il est peu probable car p-value < 0.05.
+
+
+Test var.test(d.h, d.f) : 
+> var.test(d.h, d.f)
+
+        F test to compare two variances
+
+data:  d.h and d.f
+F = 1.276, num df = 162, denom df = 244, p-value = 0.08541
+alternative hypothesis: true ratio of variances is not equal to 1
+95 percent confidence interval:
+ 0.9666089 1.6981920
+sample estimates:
+ratio of variances 
+          1.276015 
+
+
+les variances sont acceptablement homongenes
+
+
+Test de wilcox :
+wilcox.test(d.f, d.h)
+
+C'est un test de rang : Il faut ranger dans l'ordre croissant les tailles puis on attribut des rangs de 1 a n à ces tailles.
+
+      Wilcoxon rank sum test with continuity correction
+
+data:  d.f and d.h
+W = 2278.5, p-value < 2.2e-16
+alternative hypothesis: true location shift is not equal to 0
+
+on a p-value < 0.05
+Donc peu probable que l'ecart des rang est du au hasard
+Donc il y a un ecart des rangs significatifs entre les hommes et les femmes.
+
+TEST UNILATERAL : 
+On determine une hypothèse alternative qui se traduit en hypothèse d'égalité.
+
+Hyp1 : MoyF < MoyH --> ce que je veux montrer
+Hyp0 : 
+
+Exemple : t.test(d.f, d.h, var.equal=T, alternative="less")
