@@ -10,10 +10,12 @@ public class Cartouche {
     }
 
     public String getCouleur() {
+
         return couleur;
     }
 
     public boolean estVide(){
+
         return(this.niveau==0);
     }
 
@@ -24,10 +26,12 @@ public class Cartouche {
     }
 
     public boolean getEstUtilise(){
+
         return estUtilise;
     }
 
     public void setEstUtilise(boolean u){
+
         estUtilise = u;
     }
 }
