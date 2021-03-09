@@ -12,7 +12,7 @@ public class Interaction extends MouseInputAdapter {
     Cursor cursor = new Cursor(Cursor.HAND_CURSOR);
 
     enum State {
-        IDLE, ZOOM_IN_DRAG, ZOOM_OUT, DRAG;
+        IDLE, ZOOM_IN_DRAG, ZOOM_OUT, DRAG, DRAG_ZOOM_OUT;
     }
     State state = State.IDLE;
 
@@ -59,6 +59,15 @@ public class Interaction extends MouseInputAdapter {
                     state = State.IDLE;
                     break;
                 }
+            case DRAG:
+                grapher.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+                state = State.IDLE;
+                break;
+
+            case DRAG_ZOOM_OUT:
+                grapher.zoom(down, e.getPoint());
+                state = State.IDLE;
+                break;
             default:break;
         }
     }
@@ -72,21 +81,30 @@ public class Interaction extends MouseInputAdapter {
         switch (state){
             case ZOOM_IN_DRAG:
                 //RECUPERATION DE LA DISTANCE
-                if( (int) ((down.getX() - position.getX()) + (down.getY() - position.getY())) > 5){
+                if(  (down.distance(position) > 5)){
                     //Changement de curseur
                     grapher.setCursor(cursor);
                     //Déplacement de la fenêtre
                     grapher.translate( (int) (down.getX() - position.getX()), (int) (down.getY() - position.getY()));
                     //Changement de l'état
                     state = State.DRAG;
-                    break;
+
                 }
+                break;
             case DRAG:
 
                 grapher.setCursor(cursor);
-                grapher.translate( (int) (down.getX() - position.getX()), (int) (down.getY() - position.getY()));
-                state = State.DRAG;
+                grapher.translate( (int) (position.getX() - down.getX()), (int) (position.getY() - down.getY()));
+                down = e.getPoint();
                 break;
+            case ZOOM_OUT:
+                if(down.distance(position) > 5){
+                    state = State.DRAG_ZOOM_OUT;
+                }
+            case DRAG_ZOOM_OUT:
+                grapher.repaint();
+                break;
+
             default:break;
         }
     }
@@ -108,6 +126,16 @@ public class Interaction extends MouseInputAdapter {
                 }
             default:break;
         }
+    }
+
+    public void drawFeedback(Graphics2D g2){ ;
+        switch (state){
+            case DRAG_ZOOM_OUT:
+                g2.drawRect((int)down.getX(), (int)down.getY(), (int) (position.getX() - down.getX()), (int) (position.getY() - down.getY()));
+                break;
+            default:break;
+        }
+
     }
 
 }

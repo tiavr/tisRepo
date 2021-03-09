@@ -32,9 +32,9 @@ public class Grapher extends JPanel {
 	protected double ymin, ymax;
 
 	protected Vector<Function> functions;
-	
+	Interaction interaction;
 	public Grapher() {
-		Interaction interaction = new Interaction(this);
+		interaction = new Interaction(this);
 		addMouseListener(interaction);
 		addMouseMotionListener(interaction);
 		addMouseWheelListener(interaction);
@@ -122,6 +122,8 @@ public class Grapher extends JPanel {
 		for(double x = -xstep; x > xmin; x -= xstep) { drawXTick(g2, x); }
 		for(double y = ystep; y < ymax; y += ystep)  { drawYTick(g2, y); }
 		for(double y = -ystep; y > ymin; y -= ystep) { drawYTick(g2, y); }
+
+		interaction.drawFeedback(g2);
 	}
 	
 	protected double dx(int dX) {

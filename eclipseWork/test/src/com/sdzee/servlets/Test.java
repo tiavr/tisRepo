@@ -11,13 +11,13 @@ public class Test extends HttpServlet {
 	
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
 		
-		/* Création et initialisation du message. */
+		/* Crï¿½ation et initialisation du message. */
 		String paramAuteur = request.getParameter( "auteur" );
 		String message = "Transmission de variables : OK ! " + paramAuteur;
 			
-		/* Création du bean */
+		/* Crï¿½ation du bean */
 		Coyote premierBean = new Coyote();
-		/* Initialisation de ses propriétés */
+		/* Initialisation de ses propriï¿½tï¿½s */
 		premierBean.setNom( "Coyote" );
 		premierBean.setPrenom( "Wile E." );
 			
@@ -25,7 +25,7 @@ public class Test extends HttpServlet {
 		request.setAttribute( "test", message );
 		request.setAttribute( "coyote", premierBean );
 			
-		/* Transmission de la paire d'objets request/response à notre JSP */
+		/* Transmission de la paire d'objets request/response ï¿½ notre JSP */
 		this.getServletContext().getRequestDispatcher( "/WEB-INF/test.jsp" ).forward( request, response );
 }
 }
