@@ -91,3 +91,46 @@ Hyp1 : MoyF < MoyH --> ce que je veux montrer
 Hyp0 : 
 
 Exemple : t.test(d.f, d.h, var.equal=T, alternative="less")
+
+Test du Chi-2 : 
+
+> e$Pointure <- cut(e$Pointure, breaks=c(-Inf, 39, 41, +Inf), labels=c('p', 'm', 'g'))
+> e$Ecartement_Orbital <- cut(e$Ecartement_Orbital, breaks=c(-Inf, 6.271, +Inf), labels=c('-', '+'))
+> head(e, 3)
+   Pointure Ecartement_Orbital
+8         m                  -
+39        g                  -
+41        p                  -
+> head(e, 6)
+    Pointure Ecartement_Orbital
+8          m                  -
+39         g                  -
+41         p                  -
+98         g                  +
+100        m                  +
+101        p                  -
+> chisq.test(e$Pointure, e$Ecartement_Orbital)
+
+        Pearson's Chi-squared test
+
+data:  e$Pointure and e$Ecartement_Orbital
+X-squared = 19.452, df = 2, p-value = 5.971e-05
+
+Sample permet de prendre un échantillon :
+
+sample(1:300, 10) ---> de 1 à 300 on prend que 10 echantillons
+
+> p <- vector(mode = "numeric")
+> for(i in 1:200){
++ d.s <- d[ sample(1:285,100),]
++ test <- chisq.test(d.s$Pointure, d.s$Ecartement_Orbital)
++ p[i] <- test$p.value
++ }
+
+Boostrap : 
+
+sample(1:285, 285, replace=T)
+Replace = avec remise et 
+meme nombre de personne pour l'echantillonnage : 285 = boostrap
+
+si il est inférieur a 285 c'est le Jackknife
