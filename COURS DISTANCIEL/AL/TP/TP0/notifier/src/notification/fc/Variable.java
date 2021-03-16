@@ -1,6 +1,6 @@
 package notification.fc;
 
-import notification.ui.Window;
+import notification.ui.*;
 
 import java.util.*;
 

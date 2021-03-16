@@ -1,7 +1,8 @@
 package notification.ui;
 
-import notification.fc.Callback;
+import notification.fc.*;
 
+import javax.security.auth.callback.Callback;
 import javax.swing.*;
 import javax.swing.JLabel;
 
