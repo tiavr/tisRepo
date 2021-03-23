@@ -142,9 +142,7 @@ si il est inférieur a 285 c'est le Jackknife
 + p[i] <- test$p.value
 + }
 
-DEBUT DE COURS REGRESSION LINEAIRE : 
-
-d <- read.table("Donnees_Etudiants.tsv", header=T, sep='\t')
+DEBUT DE COURS REGRESSION LIN
 
 d <- d[ , 6:7] : Recupération des colonnes 6 et 7.
 
@@ -159,4 +157,36 @@ La droite est horizontale.
 
 rappel : y = B0 + B1x
 
+Il y a des variations inter-individuelles : Pour une personne qui fait 1m70, ca va du 38 au 43 en pointure.
 
+m1 <- with(d, lm(Pointure ~ Taille_en_cm))
+summary(m1)
+R-squared : 75% des données connues donc très bon modèle
+
+F-Statistic : Bon Rapprt signal sur bruit
+P-value < 0.05 et très faible
+Conclusion : très bon modèle
+
+
+Coefficients : 
+Intercept : ordonnée à l'origine
+Donc l'équation c'est : -4.4 + 0.26x
+
+Traçage de la droite : abline(m1, col='red') qui enlève toute variation inter-individuelles : une seule pointure pour une seule taille.
+
+R2 = sig2 fac / sig2 fac + sig2 res
+sig2 tot = sig2 res + sig2 fac
+
+cov(d) = covariance
+cor(d) = correlation
+
+cor.test(d$Taille_en_cm, d$Longueur_Majeur) 
+
+Sample : 
+
+id <- sample(1:307, 20)
+d.s <- d[id,]
+points(d.s$Taille_en_cm, d.s$Longueur_Majeur, col="blue", pch=20)
+m1 <- lm(d.s$Longueur_Majeur ~ d.s$Taille_en_cm)
+summary(m1)
+abline(m1, col="blue")

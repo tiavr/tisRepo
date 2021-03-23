@@ -1,43 +1,30 @@
-
 2 HISTOGRAMMES DANS LA MEME FENETRE
 > par(mfrow=c(2,1))
-
 TAILLE ET PAS DE L'HIST
 > tailles.breaks <- seq(145, 205, 2)
-
 CREATION DE l'HIST
 > hist(d.f, col="pink", breaks=tailles.breaks)
 > hist(d.h, col="darkblue", breaks=tailles.breaks)
-
 RECUPERATION DES TAILLES HOMME ET FEMMES
 d.h <- d.s[d.s$Sexe=="H", 2]
 d.f <- d.s[d.s$Sexe=="F", 2]
-
 REPRESENTATION QUANTILE 
-
 > qqnorm(d.f, col="pink", pch=20)
 > qqline(d.f, col="red")
 > qqnorm(d.h, col="blue", pch=20)
 > qqline(d.h, col="red")
 > 
-
 TEST DE SHAPIRO-WILK
 shapiro.test(d.h) 
 Hypothèse : les 2 distributions sont égales (femmes et loi normale)
 p-value : Probabilité que la mesure soit due au hasard.
-
 Pour les femmes : p-value < 0.05 donc elle ne suit pas une loi normale
 Pour les hommes : p-value > 0.05
-
 Test de student : 
-
 Sert à comparer les moyennes
 Mais la moyenne est paramètre d'une loi normale, or la distribution des femmes ne suit pas une loi normale.
-
 > t.test(d.f, d.h, var.equal=T)
-
         Two Sample t-test
-
 data:  d.f and d.h
 t = -21.639, df = 406, p-value < 2.2e-16
 alternative hypothesis: true difference in means is not equal to 0
@@ -46,16 +33,11 @@ alternative hypothesis: true difference in means is not equal to 0
 sample estimates:
 mean of x mean of y 
  165.5755  179.4479 
-
  p-value < 0.05 (probabilité que l'écart entre les 2 populations soit due au hasard)
  Donc il est peu probable car p-value < 0.05.
-
-
 Test var.test(d.h, d.f) : 
 > var.test(d.h, d.f)
-
         F test to compare two variances
-
 data:  d.h and d.f
 F = 1.276, num df = 162, denom df = 244, p-value = 0.08541
 alternative hypothesis: true ratio of variances is not equal to 1
@@ -64,36 +46,23 @@ alternative hypothesis: true ratio of variances is not equal to 1
 sample estimates:
 ratio of variances 
           1.276015 
-
-
 les variances sont acceptablement homongenes
-
-
 Test de wilcox :
 wilcox.test(d.f, d.h)
-
 C'est un test de rang : Il faut ranger dans l'ordre croissant les tailles puis on attribut des rangs de 1 a n à ces tailles.
-
       Wilcoxon rank sum test with continuity correction
-
 data:  d.f and d.h
 W = 2278.5, p-value < 2.2e-16
 alternative hypothesis: true location shift is not equal to 0
-
 on a p-value < 0.05
 Donc peu probable que l'ecart des rang est du au hasard
 Donc il y a un ecart des rangs significatifs entre les hommes et les femmes.
-
 TEST UNILATERAL : 
 On determine une hypothèse alternative qui se traduit en hypothèse d'égalité.
-
 Hyp1 : MoyF < MoyH --> ce que je veux montrer
 Hyp0 : 
-
 Exemple : t.test(d.f, d.h, var.equal=T, alternative="less")
-
 Test du Chi-2 : 
-
 > e$Pointure <- cut(e$Pointure, breaks=c(-Inf, 39, 41, +Inf), labels=c('p', 'm', 'g'))
 > e$Ecartement_Orbital <- cut(e$Ecartement_Orbital, breaks=c(-Inf, 6.271, +Inf), labels=c('-', '+'))
 > head(e, 3)
@@ -110,27 +79,102 @@ Test du Chi-2 :
 100        m                  +
 101        p                  -
 > chisq.test(e$Pointure, e$Ecartement_Orbital)
-
         Pearson's Chi-squared test
-
 data:  e$Pointure and e$Ecartement_Orbital
 X-squared = 19.452, df = 2, p-value = 5.971e-05
-
 Sample permet de prendre un échantillon :
-
 sample(1:300, 10) ---> de 1 à 300 on prend que 10 echantillons
-
 > p <- vector(mode = "numeric")
 > for(i in 1:200){
 + d.s <- d[ sample(1:285,100),]
 + test <- chisq.test(d.s$Pointure, d.s$Ecartement_Orbital)
 + p[i] <- test$p.value
 + }
-
 Boostrap : 
-
 sample(1:285, 285, replace=T)
 Replace = avec remise et 
 meme nombre de personne pour l'echantillonnage : 285 = boostrap
-
 si il est inférieur a 285 c'est le Jackknife
+load("F:\\tisRepo\\COURS DISTANCIEL\\MSS\\TP.RData")
+d
+d.f
+d.s.h
+> e$Pointure <- cut(e$Pointure, breaks=c(-Inf, 39, 41, +Inf), labels=c('p', 'm', 'g'))e
+e
+p
+test
+p
+e
+t
+t.test
+d <- read.table("Donnees_Etudiants.tsv", header=T, sep='\t')
+d
+d.h
+d
+names(d)
+d <- d[ , 6:7]
+d
+d <- na.omit(d)
+d
+summary(d)
+plot(d)
+plot(x=d$Taille_en_cm, y=d$Pointure, xlab="Taille (cm)", ylab="Pointure", pch=20)
+m1 <- 
+exit
+m1 <- with(d, lm(Pointure ~ Taille_en_cm))
+summary(m1)
+save.image("F:\\tisRepo\\COURS DISTANCIEL\\MSS\\TP.RData")
+plot(x=d$Taille_en_cm, y=d$Pointure, xlab="Taille (cm)", ylab="Pointure", pch=20)
+abline(m1, col='red')
+d <- read.table("Donnees_Etudiants.tsv", header=T, sep='\t')
+names(d)
+d <- d[, 16:19]
+d <- na.omit(d)
+summary(d)
+d <- read.table("Donnees_Etudiants.tsv", header=T, sep='\t')
+d <- d[, c(16,19)]
+d
+d <- na.omit(d)
+d
+summary(d)
+plot(d)
+plot(x=d$Notes_Maths_S5, y=d$Nb_Heures_JeuxVideos_Mensuelles, xlab="Notes", ylab="NbHeuresJeux", pch=20)
+plot(x=d$Notes_Maths_S5, y=d$Nb_Heures_JeuxVideos_Mensuelles, xlab="Notes", ylab="NbHeuresJeux", pch=20)
+summary(d)
+d
+plot(x=d$Notes_Maths_S5, y=d$Nb_Heures_JeuxVideos_Mensuelles, xlab="Notes", ylab="NbHeuresJeux", pch=20)
+plot(x=d$Notes_Maths_S5, y=d$Nb_Heures_JeuxVideos_Mensuelles, xlab="Notes en Maths (S5)", ylab="Nb Heures Jeux", pch=20)
+plot(x=d$Note_Maths_S5, y=d$Nb_Heures_JeuxVideos_Mensuelles, xlab="Notes en Maths (S5)", ylab="Nb Heures Jeux", pch=20)
+plot(x=d$Nb_Heures_JeuxVideos_Mensuelles, y=d$Note_Maths_S5, xlab="Nb d'heures de jeux vid�os mensuelles", ylab="Notes en maths S5", pch=20)
+d <- read.table("Donnees_Etudiants.tsv", header=T, sep='\t')
+names(d)
+d <- d[, c(6, 12)]
+d <- na.omit(d)
+d
+plot(d)
+plot(x=d$Taille_en_cm, y=d$Longueur_Majeur, xlab="Taille (cm)", ylab="Longueur du majeur (cm)", pch=20)
+m1 <- with(d, lm(Longueur_Majeur ~ Taille_en_cm))
+summary(m1)
+abline(m1, col='red')
+cor(d)
+cov(d)
+cor.test(d$Taille_en_cm, d$Longueur_Majeur)
+cor.test(d$Taille_en_cm, d$Longueur_Majeur 
+)
+dim(d)
+ok
+ee
+ee
+e
+e
+e
+id <- sample(1:307, 20)
+d.s
+d.s <- d[id,]
+point(d.s$Taille_en_cm, d.s$Longueur_Majeur, col="blue", pch=20)
+points(d.s$Taille_en_cm, d.s$Longueur_Majeur, col="blue", pch=20)
+m1 <- lm(d.s$Longueur_Majeur ~ d.s$Taille_en_cm)
+summary(m1)
+abline(m1, col="blue")
+save.image("F:\\tisRepo\\COURS DISTANCIEL\\MSS\\TP.RData")
+save.image("F:\\tisRepo\\COURS DISTANCIEL\\MSS\\TP.RData")
