@@ -3,8 +3,8 @@ package grapher.ui;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-import java.awt.Point;
 import java.awt.Color;
+import java.awt.Point;
 import java.awt.BasicStroke;
 import javax.swing.JPanel;
 
@@ -32,12 +32,14 @@ public class Grapher extends JPanel {
 	protected double ymin, ymax;
 
 	protected Vector<Function> functions;
+	Interaction interaction;
 	
 	public Grapher() {
 		xmin = -PI/2.; xmax = 3*PI/2;
 		ymin = -1.5;   ymax = 1.5;
 		
 		functions = new Vector<Function>();
+		interaction = new Interaction(this);
 	}
 	
 	public void add(Function function) {
@@ -114,6 +116,8 @@ public class Grapher extends JPanel {
 		for(double x = -xstep; x > xmin; x -= xstep) { drawXTick(g2, x); }
 		for(double y = ystep; y < ymax; y += ystep)  { drawYTick(g2, y); }
 		for(double y = -ystep; y > ymin; y -= ystep) { drawYTick(g2, y); }
+
+		interaction.drawFeedback(g2);
 	}
 	
 	protected double dx(int dX) { return  (double)((xmax-xmin)*dX/W); }
@@ -156,7 +160,6 @@ public class Grapher extends JPanel {
 		return w * scale;
 	}
 	
-
 	public void translate(int dX, int dY) {
 		double dx = dx(dX);
 		double dy = dy(dY);

@@ -1,6 +1,13 @@
 package ui;
 
+import fc.Variables;
+
 import java.awt.*;
+<<<<<<< HEAD
+=======
+import java.awt.event.KeyEvent;
+import java.util.*;
+>>>>>>> 6cb1e4b4023bf2175e15f3389c243b09044b83d9
 import javax.swing.*;
 
 public class Window extends JFrame{
@@ -8,6 +15,7 @@ public class Window extends JFrame{
     private JMenuBar mb = new JMenuBar();
     private JMenuBar mb2 = new JMenuBar();
     private JMenu menu = new JMenu("Pays");
+<<<<<<< HEAD
     private JMenu menu2 = new JMenu("Championnat");
     Interaction interaction;
     public Window(){
@@ -15,6 +23,11 @@ public class Window extends JFrame{
     }
 
     public void run(){
+=======
+    private JButton button = new JButton("Valider");
+
+    public Window(Variables variable){
+>>>>>>> 6cb1e4b4023bf2175e15f3389c243b09044b83d9
 
 
         setTitle("Actu' Foot");
@@ -23,12 +36,18 @@ public class Window extends JFrame{
         setResizable(false);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
+<<<<<<< HEAD
         JPanel content = new JPanel(new FlowLayout(FlowLayout.CENTER));
         JPanel content2 = new JPanel(new FlowLayout());
+=======
+        JPanel panel = new JPanel(new FlowLayout());
+
+>>>>>>> 6cb1e4b4023bf2175e15f3389c243b09044b83d9
 
 
         JLabel label = new JLabel("Bienvenue sur notre application Actu' Foot de résultats sportifs !");
 
+<<<<<<< HEAD
         content.add(label);
 
         JMenuItem item1 = new JMenuItem("France");
@@ -46,6 +65,22 @@ public class Window extends JFrame{
         mb.add(menu);
         mb.setLocation(0,0);
         content.add(mb);
+=======
+        menu.setMnemonic(KeyEvent.VK_F);
+        panel.add(label);
+        for(int i = 0; i < variable.getPays().length; i++){
+            JMenuItem item = new JMenuItem(variable.getPays()[i]);
+            item.addActionListener((event) -> System.exit(0));
+            menu.add(item);
+        }
+        mb.add(menu);
+        mb.setLocation(0,0);
+        panel.add(mb);
+
+        panel.setPreferredSize(new Dimension(100,200));
+        getContentPane().add(panel, BorderLayout.CENTER);
+        this.add(button, BorderLayout.SOUTH);
+>>>>>>> 6cb1e4b4023bf2175e15f3389c243b09044b83d9
 
         JMenuItem item6 = new JMenuItem("Championnat 1");
         JMenuItem item7 = new JMenuItem("Championnat 2");
