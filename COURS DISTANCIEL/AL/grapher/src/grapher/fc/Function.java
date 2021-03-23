@@ -17,4 +17,19 @@ public interface Function {
 		public double y(double x) { return  sin(x); }
 	};
 
+	public static final Function TAN = new Function() {
+		public String toString()  { return "tan(x)"; }
+		public double y(double x) { return  tan(x); }
+	};
+
+	public static final Function EXP = new Function() {
+		public String toString()  { return "exp(x)"; }
+		public double y(double x) { return  exp(x); }
+	};
+
+	public static final Function LOG = new Function() {
+		public String toString()  { return "log(x)"; }
+		public double y(double x) { return  log(x); }
+	};
+
 }

@@ -37,6 +37,7 @@ public class Variable extends Thread implements Callback{
 	}
 	
 	public double getValue() {
+
 		return value;
 	}
 	public void setValue(double new_value) {
@@ -53,6 +54,7 @@ public class Variable extends Thread implements Callback{
 	}
 		//Méthode d'abonnement
 	public void addCallback(Callback callback){
+
 		callbacks.add(callback);
 	}
 		//Implémentation de l'interface necessite implementation de ses methodes

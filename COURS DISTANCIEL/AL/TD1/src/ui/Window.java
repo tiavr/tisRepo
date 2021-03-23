@@ -1,6 +1,9 @@
 package ui;
 
+import fc.Variables;
+
 import java.awt.*;
+import java.awt.event.KeyEvent;
 import java.util.*;
 import javax.swing.*;
 
@@ -8,8 +11,9 @@ public class Window extends JFrame{
 
     private JMenuBar mb = new JMenuBar();
     private JMenu menu = new JMenu("Pays");
+    private JButton button = new JButton("Valider");
 
-    public Window(){
+    public Window(Variables variable){
 
 
         setTitle("Actu' Foot");
@@ -18,19 +22,26 @@ public class Window extends JFrame{
         setResizable(false);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
-        JPanel content = new JPanel(new FlowLayout(FlowLayout.CENTER));
+        JPanel panel = new JPanel(new FlowLayout());
 
 
 
         JLabel label = new JLabel("Bienvenue sur notre application Actu' Foot de résultats sportifs !");
 
-        content.add(label);
-
+        menu.setMnemonic(KeyEvent.VK_F);
+        panel.add(label);
+        for(int i = 0; i < variable.getPays().length; i++){
+            JMenuItem item = new JMenuItem(variable.getPays()[i]);
+            item.addActionListener((event) -> System.exit(0));
+            menu.add(item);
+        }
         mb.add(menu);
         mb.setLocation(0,0);
-        content.add(mb);
-        content.setPreferredSize(new Dimension(100,200));
-        getContentPane().add(content, BorderLayout.CENTER);
+        panel.add(mb);
+
+        panel.setPreferredSize(new Dimension(100,200));
+        getContentPane().add(panel, BorderLayout.CENTER);
+        this.add(button, BorderLayout.SOUTH);
 
         setVisible(true);
     }
