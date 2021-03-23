@@ -122,8 +122,8 @@ sample(1:300, 10) ---> de 1 à 300 on prend que 10 echantillons
 
 > p <- vector(mode = "numeric")
 > for(i in 1:200){
-+ d.s <- d[ sample(1:285,100),]
-+ test <- chisq.test(d.s$Pointure, d.s$Ecartement_Orbital)
++ e <- d[ sample(1:285,100),]
++ test <- chisq.test(e$Pointure, e$Ecartement_Orbital)
 + p[i] <- test$p.value
 + }
 
@@ -134,3 +134,29 @@ Replace = avec remise et
 meme nombre de personne pour l'echantillonnage : 285 = boostrap
 
 si il est inférieur a 285 c'est le Jackknife
+
+> p <- vector(mode = "numeric")
+> for(i in 1:200){
++ e <- d[ sample(1:285,100),]
++ test <- chisq.test(e$Pointure, e$Taille_en_cm)
++ p[i] <- test$p.value
++ }
+
+DEBUT DE COURS REGRESSION LINEAIRE : 
+
+d <- read.table("Donnees_Etudiants.tsv", header=T, sep='\t')
+
+d <- d[ , 6:7] : Recupération des colonnes 6 et 7.
+
+d <- na.omit(d) : Enlever les na.
+summary(d)
+plot(d)
+plot(x=d$Taille_en_cm, y=d$Pointure, xlab="Taille (cm)", ylab="Pointure", pch=20)
+Graphique qui montre pour chaque pointure les differentes tailles.
+
+S'il n'y a pas corrélation : y = B0 + o * x soit B1 = 0.
+La droite est horizontale.
+
+rappel : y = B0 + B1x
+
+
